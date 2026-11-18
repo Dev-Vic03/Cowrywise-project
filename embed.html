@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embed by Cowrywise - Integrate Investment Features into Your Services</title>
+    <meta
+      name="description"
+      content="Embed API allows digital banks, fintechs, and apps to offer savings, mutual funds, and Nigerian stocks directly to their users with full regulatory compliance."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="wrap nav-in">
+        <a href="index.html" class="logo" aria-label="Cowrywise Homepage">
+          <img
+            src="images/logo.svg"
+            alt="Cowrywise"
+            class="logo-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+          />
+          <span class="logo-fallback" style="display: none;">
+            <span class="logo-mark"></span>cowrywise
+          </span>
+        </a>
+        <nav class="menu-bar" aria-label="Main navigation">
+          <div class="has-menu">
+            <a href="save.html" class="nav-link">Personal <i class="chev"></i></a>
+            <div class="drop">
+              <a href="save.html"
+                ><b>Savings</b><span>Save and earn amazing returns</span></a
+              >
+              <a href="mutual-funds.html"
+                ><b>Mutual Funds</b><span>Grow your wealth without chasing charts</span></a
+              >
+              <a href="stocks.html"
+                ><b>Stocks</b><span>Own a slice of Nigeria's top companies</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="index.html#sec-calc-title" class="drop-sub"
+                ><b>Estimate your returns &nearr;</b><span>Calculate potential gains</span></a
+              >
+              <a href="mutual-funds.html#risk-assessment" class="drop-sub"
+                ><b>Risk assessment &nearr;</b><span>Find your investor profile</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="sprout.html" class="nav-link">Business <i class="chev"></i></a>
+            <div class="drop">
+              <a href="sprout.html"
+                ><b>Sprout</b><span>Put your business idle cash to work</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="embed.html" class="nav-link active">Developer <i class="chev"></i></a>
+            <div class="drop">
+              <a href="embed.html"
+                ><b>Embed</b><span>Offer investment services in your app</span></a
+              >
+              <a href="developers.html"
+                ><b>Docs</b><span>Read how to integrate the Embed API</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="https://embedbycowrywise.slack.com/" target="_blank" rel="noopener noreferrer" class="drop-sub"
+                ><b>Slack Community &nearr;</b><span>Join developers building on Cowrywise</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="learn.html" class="nav-link">Learn <i class="chev"></i></a>
+            <div class="drop">
+              <a href="learn.html"
+                ><b>Glossary</b><span>Learn from a curation of simple money terms</span></a
+              >
+              <a href="blog.html"
+                ><b>Blog</b><span>Announcements, articles and stories</span></a
+              >
+              <a href="learn.html#faq"
+                ><b>Help Center</b><span>Everything you need to use Cowrywise</span></a
+              >
+            </div>
+          </div>
+        </nav>
+        <div class="nav-cta" id="nav-cta">
+          <a href="login.html" class="login">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Cowrywise" class="logo-img" />
+          </a>
+          <button
+            class="mobile-nav-close"
+            id="mobile-nav-close"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="mobile-nav-body">
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Personal</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual Funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="mutual-funds.html#risk-assessment">Risk Assessment</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Business</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="sprout.html">Sprout (Corporate Treasury)</a>
+            </div>
+          </div>
+          <div class="m-group active">
+            <button class="m-trigger" type="button">
+              <span>Developer</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="embed.html">Embed API</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Learn</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="learn.html">Glossary</a>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html#faq">Help Center</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav-footer" id="mobile-nav-cta">
+          <a href="login.html" class="btn btn-outline">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO -->
+      <section class="cw-hero">
+        <div class="cw-wrap cw-hero-inner">
+          <div class="cw-pill-badge">
+            <span class="cw-pill-dot"></span>
+            <span>Embed Investment API</span>
+          </div>
+          <h1 class="cw-hero-title">Integrate investment features into your services</h1>
+          <p class="cw-hero-subtitle">
+            Offer high-yield savings, SEC-regulated mutual funds, and equities directly inside your
+            mobile or web app. Connect with our battle-tested APIs and typed SDKs.
+          </p>
+          <div class="cw-hero-actions">
+            <a href="signup.html" class="cw-btn-primary">Get Sandbox API Keys</a>
+            <a href="developers.html" class="cw-btn-secondary">Read Documentation &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CODE TERMINAL SECTION -->
+      <section class="cw-section">
+        <div class="cw-wrap">
+          <div class="cw-section-head">
+            <span class="cw-tag">Fast Integration</span>
+            <h2>Build in minutes, not months</h2>
+            <p>Simple RESTful endpoints with authenticated headers and instant webhook events.</p>
+          </div>
+
+          <div class="code-terminal" style="max-width: 860px; margin: 0 auto;">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-tabs">
+                <button type="button" class="terminal-tab active" data-lang="curl">cURL</button>
+                <button type="button" class="terminal-tab" data-lang="node">Node.js</button>
+                <button type="button" class="terminal-tab" data-lang="python">Python</button>
+              </div>
+            </div>
+
+            <!-- cURL Snippet -->
+            <pre class="terminal-body terminal-snippet" data-lang="curl"><code><span class="token-comment"># Create an automated savings plan for your user</span>
+curl -X POST https://api.cowrywise.com/v1/savings/plans \
+  -H <span class="token-string">"Authorization: Bearer sec_key_live_948f..."</span> \
+  -H <span class="token-string">"Content-Type: application/json"</span> \
+  -d '{
+    <span class="token-string">"customer_id"</span>: <span class="token-string">"cust_847192"</span>,
+    <span class="token-string">"plan_name"</span>: <span class="token-string">"My Dream Home"</span>,
+    <span class="token-string">"target_amount"</span>: <span class="token-number">5000000</span>,
+    <span class="token-string">"frequency"</span>: <span class="token-string">"monthly"</span>,
+    <span class="token-string">"duration_months"</span>: <span class="token-number">12</span>
+  }'</code></pre>
+
+            <!-- Node.js Snippet -->
+            <pre class="terminal-body terminal-snippet" data-lang="node" style="display: none;"><code><span class="token-keyword">import</span> { CowrywiseClient } <span class="token-keyword">from</span> <span class="token-string">'@cowrywise/embed-sdk'</span>;
+
+<span class="token-keyword">const</span> cowry = <span class="token-keyword">new</span> CowrywiseClient({ apiKey: process.env.COWRYWISE_SECRET_KEY });
+
+<span class="token-keyword">const</span> plan = <span class="token-keyword">await</span> cowry.savings.createPlan({
+  customerId: <span class="token-string">'cust_847192'</span>,
+  planName: <span class="token-string">'My Dream Home'</span>,
+  targetAmount: <span class="token-number">5000000</span>,
+  frequency: <span class="token-string">'monthly'</span>,
+  durationMonths: <span class="token-number">12</span>
+});
+
+console.log(<span class="token-string">'Plan created successfully:'</span>, plan.id);</code></pre>
+
+            <!-- Python Snippet -->
+            <pre class="terminal-body terminal-snippet" data-lang="python" style="display: none;"><code><span class="token-keyword">from</span> cowrywise <span class="token-keyword">import</span> Client
+
+client = Client(api_key=<span class="token-string">"sec_key_live_948f..."</span>)
+
+plan = client.savings.create_plan(
+    customer_id=<span class="token-string">"cust_847192"</span>,
+    plan_name=<span class="token-string">"My Dream Home"</span>,
+    target_amount=<span class="token-number">5000000</span>,
+    frequency=<span class="token-string">"monthly"</span>,
+    duration_months=<span class="token-number">12</span>
+)
+
+print(f<span class="token-string">"Created Plan: {plan.id} with status {plan.status}"</span>)</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- CORE CAPABILITIES (NO EMOJIS, CLEAN SVGS) -->
+      <section class="cw-section bg-alt">
+        <div class="cw-wrap">
+          <div class="cw-section-head">
+            <span class="cw-tag">Infrastructure</span>
+            <h2>Everything you need to power in-app wealth</h2>
+            <p>From compliance checks to asset custody, we handle the complex financial plumbing.</p>
+          </div>
+
+          <div class="cw-grid-3">
+            <div class="cw-card">
+              <div class="cw-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+              </div>
+              <h3>Automated KYC & Identity</h3>
+              <p>Instant BVN, NIN, and address verification via certified identity partners. Compliant customer onboarding with zero friction.</p>
+              <div class="cw-card-meta">Instant identity check &rarr;</div>
+            </div>
+
+            <div class="cw-card">
+              <div class="cw-icon-box green">
+                <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+              </div>
+              <h3>Multi-Rail Payment Debits</h3>
+              <p>Support NIBSS Direct Debit, automated card charges, virtual bank accounts, and Paystack/Flutterwave integrations.</p>
+              <div class="cw-card-meta">Multi-currency wallets &rarr;</div>
+            </div>
+
+            <div class="cw-card">
+              <div class="cw-icon-box purple">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h3>SEC Regulatory Umbrella</h3>
+              <p>Operate safely under our licensed SEC Fund Management and Digital Sub-broker regulatory framework. Zero licensing headaches.</p>
+              <div class="cw-card-meta">SEC License #1940 &rarr;</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIGNATURE BOTTOM CTA BANNER -->
+      <section class="cw-bottom-cta">
+        <div class="cw-wrap cw-bottom-cta-inner">
+          <h2>Your future won't wait. Start growing today.</h2>
+          <p>
+            Join over 1,000,000+ ambitious individuals and businesses building long-term wealth with Cowrywise.
+          </p>
+          <div class="cw-bottom-cta-actions">
+            <a href="signup.html" class="cw-btn-primary" style="background: #ffffff; color: #001738; padding: 14px 32px; font-weight: 700;">
+              Sign up for free
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+        <footer class="foot">
+      <div class="wrap">
+        <div class="f-top">
+          <div>
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>Trusted by millions of Nigerians like you.</p>
+            <div class="stores">
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-googleplay.svg"
+                  alt="Google Play icon"
+                  class="store-icon"
+                />
+                <span>Get it on<strong>Play Store</strong></span>
+              </a>
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-apple.svg"
+                  alt="Apple icon"
+                  class="store-icon"
+                />
+                <span>Download on<strong>App Store</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="f-cols">
+            <div>
+              <h5>Company</h5>
+              <a href="#">About Us</a>
+              <a href="#">Press</a>
+              <a href="#">Careers</a>
+              <a href="#">Ambassadors</a>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+            </div>
+            <div>
+              <h5>Product</h5>
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="sprout.html">Sprout</a>
+              <a href="embed.html">Embed API</a>
+            </div>
+            <div>
+              <h5>Resources</h5>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html">Glossary</a>
+              <a href="learn.html#faq">Help Center</a>
+              <a href="index.html#sec-calc-title">Estimate interest</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+            <div>
+              <h5>Contact</h5>
+              <a href="mailto:support@cowrywise.com">support@cowrywise.com</a>
+              <a href="tel:07000269799473">07000COWRYWISE</a>
+              <a href="https://wa.me/2349022979297" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="socials" aria-label="Social media channels">
+          <a
+            href="https://facebook.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Facebook"
+          >
+            <img src="images/icon-facebook.svg" alt="Facebook" />
+          </a>
+          <a
+            href="https://twitter.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Twitter / X"
+          >
+            <img src="images/icon-twitter.svg" alt="Twitter" />
+          </a>
+          <a
+            href="https://instagram.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Instagram"
+          >
+            <img src="images/icon-instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://wa.me/2349022979297"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on WhatsApp"
+          >
+            <img src="images/icon-whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCRApoo2RnIcX4ocFmKZwYSg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on YouTube"
+          >
+            <img src="images/icon-youtube.svg" alt="YouTube" />
+          </a>
+          <a
+            href="https://t.me/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Telegram"
+          >
+            <img src="images/icon-telegram.svg" alt="Telegram" />
+          </a>
+        </div>
+        <div class="f-mid">
+          <span
+            >&#127475;&#127468; &nbsp;5C Reverend Ogunbiyi Street, Ikeja GRA,
+            Lagos Nigeria.</span
+          >
+          <div class="lics">
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span>Cowrywise<strong>Licensed Fund Manager</strong></span>
+            </div>
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span
+                >CFTL Digital<strong>Licensed Digital Sub-broker</strong></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="legal">
+          <p>
+            Cowrywise Financial Technology Limited ("Cowrywise") is a
+            Fund/Portfolio Manager duly licensed by the Securities and Exchange
+            Commission (SEC) of Nigeria, with License #1940 and its sister
+            company, CFTL Digital Services Limited, is a Digital Sub-Broker duly
+            licensed by the SEC, with License #3005.
+          </p>
+          <p>
+            Our mutual funds are managed by our fund management partners and
+            made available to our clients through our web and mobile
+            applications. The fund manager for each mutual fund is disclosed on
+            every mutual fund's profile page. Any historical returns or expected
+            returns are hypothetical in nature and may not reflect actual future
+            performance.
+            <a href="mutual-funds.html"
+              >View full list of available mutual funds on Cowrywise.</a
+            >
+          </p>
+          <p>
+            The content on this website does not constitute a complete
+            description of Cowrywise's fund management services. By creating a
+            Cowrywise account, you accept Cowrywise's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>, and
+            by using the stocks feature on Cowrywise, you accept CFTL Digital's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </p>
+          <p>
+            Google Play and the Google Play logo are trademarks of Google LLC.
+            Apple, the Apple logo, and iPhone are trademarks of Apple Inc.
+            registered in the U.S.
+          </p>
+          <p>
+            &copy; 2026 Cowrywise Financial Technology. All rights reserved. RC
+            1419869. <a href="#">NDPC Audited and Compliant</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+  </body>
+</html>

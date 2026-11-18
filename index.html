@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0067f5" />
+    <meta
+      name="description"
+      content="Plan, save and invest online with Cowrywise. Enjoy high returns on your savings and explore diverse mutual funds and stock investment opportunities in Nigeria."
+    />
+    <title>Plan, Save and Invest Online | Cowrywise</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="wrap nav-in">
+        <a href="#" class="logo" aria-label="Cowrywise Homepage">
+          <img
+            src="images/logo.svg"
+            alt="Cowrywise"
+            class="logo-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+          />
+          <span class="logo-fallback" style="display: none;">
+            <span class="logo-mark"></span>cowrywise
+          </span>
+        </a>
+        <nav class="menu-bar" aria-label="Main navigation">
+          <div class="has-menu">
+            <a href="save.html" class="nav-link">Personal <i class="chev"></i></a>
+            <div class="drop">
+              <a href="save.html"
+                ><b>Savings</b><span>Save and earn amazing returns</span></a
+              >
+              <a href="mutual-funds.html"
+                ><b>Mutual Funds</b
+                ><span>Grow your wealth without chasing charts</span></a
+              >
+              <a href="stocks.html"
+                ><b>Stocks</b
+                ><span>Own a slice of Nigeria's top companies</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="#sec-calc-title" class="drop-sub"
+                ><b>Estimate your returns &nearr;</b
+                ><span>Calculate potential gains</span></a
+              >
+              <a href="mutual-funds.html#risk-assessment" class="drop-sub"
+                ><b>Risk assessment &nearr;</b
+                ><span>Find your investor profile</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="sprout.html" class="nav-link">Business <i class="chev"></i></a>
+            <div class="drop">
+              <a href="sprout.html"
+                ><b>Sprout</b
+                ><span>Put your business idle cash to work</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="embed.html" class="nav-link">Developer <i class="chev"></i></a>
+            <div class="drop">
+              <a href="embed.html"
+                ><b>Embed</b
+                ><span>Offer investment services in your app</span></a
+              >
+              <a href="developers.html"
+                ><b>Docs</b><span>Read how to integrate the Embed API</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="https://embedbycowrywise.slack.com/" target="_blank" rel="noopener noreferrer" class="drop-sub"
+                ><b>Slack Community &nearr;</b
+                ><span>Join developers building on Cowrywise</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="learn.html" class="nav-link">Learn <i class="chev"></i></a>
+            <div class="drop">
+              <a href="learn.html"
+                ><b>Glossary</b
+                ><span>Learn from a curation of simple money terms</span></a
+              >
+              <a href="blog.html"
+                ><b>Blog</b><span>Announcements, articles and stories</span></a
+              >
+              <a href="learn.html#faq"
+                ><b>Help Center</b
+                ><span>Everything you need to use Cowrywise</span></a
+              >
+            </div>
+          </div>
+        </nav>
+        <div class="nav-cta" id="nav-cta">
+          <a href="login.html" class="login">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+          <a href="#" class="logo">
+            <img src="images/logo.svg" alt="Cowrywise" class="logo-img" />
+          </a>
+          <button
+            class="mobile-nav-close"
+            id="mobile-nav-close"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="mobile-nav-body">
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              Personal <i class="chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="save.html"
+                ><b>Savings</b><span>Save and earn amazing returns</span></a
+              >
+              <a href="mutual-funds.html"
+                ><b>Mutual Funds</b
+                ><span>Grow your wealth without chasing charts</span></a
+              >
+              <a href="stocks.html"
+                ><b>Stocks</b><span>Own a slice of Nigeria's top companies</span></a
+              >
+              <a href="mutual-funds.html#risk-assessment"
+                ><b>Risk Assessment</b><span>Find your investor profile</span></a
+              >
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              Business <i class="chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="sprout.html"
+                ><b>Sprout</b><span>Put your business idle cash to work</span></a
+              >
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              Developer <i class="chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="embed.html"
+                ><b>Embed</b><span>Offer investment services in your app</span></a
+              >
+              <a href="developers.html"
+                ><b>Docs</b><span>Read how to integrate the Embed API</span></a
+              >
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              Learn <i class="chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="learn.html"
+                ><b>Glossary</b><span>Learn from a curation of simple money terms</span></a
+              >
+              <a href="blog.html"
+                ><b>Blog</b><span>Announcements, articles and stories</span></a
+              >
+              <a href="learn.html#faq"
+                ><b>Help Center</b><span>Everything you need to use Cowrywise</span></a
+              >
+            </div>
+          </div>
+          <div class="mobile-nav-cta" id="mobile-nav-cta">
+            <a href="login.html" class="btn btn-outline">Log in</a>
+            <a href="signup.html" class="btn">Sign up for free</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <!-- HERO -->
+      <section class="hero" aria-label="Hero">
+        <i class="sh sh-pink" aria-hidden="true"></i>
+        <i class="sh sh-yellow" aria-hidden="true"></i>
+        <i class="sh sh-green" aria-hidden="true"></i>
+        <i class="sh sh-blue" aria-hidden="true"></i>
+        <i class="sh sh-purple" aria-hidden="true"></i>
+        <div class="hero-copy">
+          <h1>Watch your money do&nbsp;more</h1>
+          <p>
+            One app. All your savings and investment needs. Trusted by
+            individuals, HNIs, and corporates.
+          </p>
+          <a href="signup.html" class="btn btn-lg">Start building wealth</a>
+        </div>
+      </section>
+
+      <!-- HOW WOULD YOU LIKE TO GROW -->
+      <section class="sec wrap" aria-labelledby="sec-grow-title">
+        <div class="head">
+          <h2 id="sec-grow-title">How would you like<br />to grow?</h2>
+          <p>
+            All your wealth-building tools, finally in one app. Save
+            automatically for the things you care about and grow your wealth the
+            smart way.
+          </p>
+          <a href="signup.html" class="btn">Start now</a>
+        </div>
+        <div class="products">
+          <a href="save.html" class="pcard c1">
+            <h3>
+              Savings
+              <svg class="arr" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </h3>
+            <i class="art a1" aria-hidden="true"></i>
+            <img
+              class="art-img"
+              src="images/img1.webp"
+              alt="Savings illustration"
+              loading="lazy"
+              onerror="this.remove()"
+            />
+            <div class="pinfo">
+              <span class="ico"
+                ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" /></svg
+              ></span>
+              <p>
+                Automate savings for your important goals, from simple
+                milestones to big dreams and earn steady returns
+              </p>
+            </div>
+          </a>
+          <a href="mutual-funds.html" class="pcard c2">
+            <h3>
+              Mutual Funds
+              <svg class="arr" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </h3>
+            <i class="art a2" aria-hidden="true"></i>
+            <img
+              class="art-img"
+              src="images/img2.webp"
+              alt="Mutual Funds illustration"
+              loading="lazy"
+              onerror="this.remove()"
+            />
+            <div class="pinfo">
+              <span class="ico"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 17l6-6 4 4 8-8M15 7h6v6" /></svg
+              ></span>
+              <p>
+                Smart returns without guesswork. Our mutual funds handle it,
+                letting you focus on your goals.
+              </p>
+            </div>
+          </a>
+          <a href="stocks.html" class="pcard c3">
+            <h3>
+              Stocks
+              <svg class="arr" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </h3>
+            <i class="art a3" aria-hidden="true"></i>
+            <img
+              class="art-img"
+              src="images/img3.webp"
+              alt="Stocks illustration"
+              loading="lazy"
+              onerror="this.remove()"
+            />
+            <div class="pinfo">
+              <span class="ico"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 17l6-6 4 4 8-8M15 7h6v6" /></svg
+              ></span>
+              <p>
+                Co-own Nigeria's top companies, from market leaders to newcomers
+                and grow with them.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- BUILT ON TRUST -->
+      <section class="sec wrap line" aria-labelledby="sec-trust-title">
+        <div class="head">
+          <h2 id="sec-trust-title">Built on trust.<br />Backed by results.</h2>
+          <p>
+            We handle money the way it should be, <strong>responsibly</strong>.
+            We're regulated by the SEC and built for transparency. No hidden
+            tricks, no risky plays, just access to assets designed to grow your
+            wealth the right way.
+          </p>
+          <a href="signup.html" class="btn">Start investing</a>
+        </div>
+        <div class="trust">
+          <div class="tc app">
+            <img
+              src="images/app-screen.webp"
+              alt="Cowrywise app home screen"
+              loading="lazy"
+              onerror="this.src='https://cowrywise.com/images/mockups/cowrywise-app-screen-home-2025.webp'"
+            /><img
+              class="coin"
+              src="images/coin.webp"
+              alt=""
+              aria-hidden="true"
+              onerror="this.src='https://cowrywise.com/images/stocks/s-coin-2.webp'"
+            />
+          </div>
+          <div class="tc-col">
+            <div class="tc txt">
+              <h4>Grow with clarity, not confusion.</h4>
+              <p>
+                What's better than watching your money grow in real time?
+                Tracking your investments, savings, and returns without the
+                guesswork.
+              </p>
+            </div>
+            <div class="tc face">
+              <img
+                src="images/girl-face.webp"
+                alt="Cowrywise user"
+                loading="lazy"
+                onerror="this.src='https://cowrywise.com/images/faces/girl-face-model.webp'"
+              /><img
+                class="coin"
+                src="images/coin.webp"
+                alt=""
+                aria-hidden="true"
+                onerror="this.src='https://cowrywise.com/images/stocks/s-coin-2.webp'"
+              />
+            </div>
+          </div>
+          <div class="tc flowers">
+            <img
+              src="images/flowers.webp"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              onerror="this.src='https://cowrywise.com/images/illos/home/flowers.webp'"
+            />
+          </div>
+        </div>
+        <a href="#" class="small-link"
+          >Our approach to security &amp; regulation &rarr;</a
+        >
+      </section>
+
+      <!-- YOU NAME IT -->
+      <section class="sec line names" aria-labelledby="sec-names-title">
+        <h2 id="sec-names-title">You name it, we've figured it out.</h2>
+        <div class="marquee" tabindex="0" aria-label="Goals and features showcase">
+          <div class="track">
+            <a href="#" class="nc"
+              ><i>&ldquo;</i>
+              <h3>Automate and build my savings</h3></a
+            >
+            <a href="#" class="nc"
+              ><i>&ldquo;</i>
+              <h3>Access Naira &amp; USD investments</h3></a
+            >
+            <a href="#" class="nc"
+              ><i>&ldquo;</i>
+              <h3>Get better returns on my money</h3></a
+            >
+            <a href="#" class="nc"
+              ><i>&ldquo;</i>
+              <h3>Invest my business cash</h3></a
+            >
+            <a href="#" class="nc"
+              ><i>&ldquo;</i>
+              <h3>Invest in mutual funds easily</h3></a
+            >
+            <a href="#" class="nc"
+              ><i>&ldquo;</i>
+              <h3>Invest in stocks</h3></a
+            >
+            <!-- Duplicate for seamless looping -->
+            <a href="#" class="nc" aria-hidden="true" tabindex="-1"
+              ><i>&ldquo;</i>
+              <h3>Automate and build my savings</h3></a
+            >
+            <a href="#" class="nc" aria-hidden="true" tabindex="-1"
+              ><i>&ldquo;</i>
+              <h3>Access Naira &amp; USD investments</h3></a
+            >
+            <a href="#" class="nc" aria-hidden="true" tabindex="-1"
+              ><i>&ldquo;</i>
+              <h3>Get better returns on my money</h3></a
+            >
+            <a href="#" class="nc" aria-hidden="true" tabindex="-1"
+              ><i>&ldquo;</i>
+              <h3>Invest my business cash</h3></a
+            >
+            <a href="#" class="nc" aria-hidden="true" tabindex="-1"
+              ><i>&ldquo;</i>
+              <h3>Invest in mutual funds easily</h3></a
+            >
+            <a href="#" class="nc" aria-hidden="true" tabindex="-1"
+              ><i>&ldquo;</i>
+              <h3>Invest in stocks</h3></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- TIME REALLY IS MONEY -->
+      <section class="time" aria-labelledby="sec-calc-title">
+        <div class="wrap">
+          <div class="head">
+            <h2 id="sec-calc-title">Time really is<br />money</h2>
+            <p>
+              <strong
+                >Sometimes the best time to invest was yesterday. The next best?
+                Today.</strong
+              >
+              See how your money could've grown in hindsight and why waiting
+              costs more than you think.
+            </p>
+            <a href="signup.html" class="btn btn-w">Start investing</a>
+          </div>
+          <div class="calc">
+            <div class="cb in">
+              <label class="line-sel" for="amount"
+                >If you invested
+                <select id="freq" aria-label="Investment frequency">
+                  <option value="0">just once</option>
+                  <option value="52">every week</option>
+                  <option value="12" selected>every month</option>
+                </select>
+                <select id="span" aria-label="Investment timeframe">
+                  <option value="1">last year</option>
+                  <option value="3" selected>3 years ago</option>
+                  <option value="5">5 years ago</option>
+                </select>
+              </label>
+              <div class="amt-row">
+                <input
+                  id="amount"
+                  type="text"
+                  inputmode="numeric"
+                  value="100,000"
+                  aria-label="Investment amount"
+                />
+                <select id="currency" aria-label="Currency">
+                  <option value="NGN">Naira</option>
+                  <option value="USD">Dollar</option>
+                </select>
+              </div>
+            </div>
+            <div class="cb out">
+              <div>
+                <small>Today, you'd have</small
+                ><strong id="r-total">&#8358;0</strong>
+              </div>
+              <div>
+                <small>..earned returns on Cowrywise</small
+                ><strong id="r-fund">&#8358;0</strong>
+              </div>
+            </div>
+            <div class="cb bank">
+              <small>..earned with your bank</small
+              ><strong id="r-bank">&#8358;0</strong>
+            </div>
+          </div>
+          <p class="note">
+            <i></i>Estimations are based on the average performance of
+            conservative mutual funds on Cowrywise from 2019. Calculation
+            excludes processing fees.
+          </p>
+        </div>
+      </section>
+
+      <!-- CUSTOMERS -->
+      <section class="sec wrap" aria-labelledby="sec-customers-title">
+        <div class="head">
+          <h2 id="sec-customers-title">Millions of customers<br />can't be wrong</h2>
+          <p>
+            Your goals are personal. That's why over two million Nigerians trust
+            Cowrywise to help them grow, their way.
+          </p>
+        </div>
+        <div class="people">
+          <figure
+            class="pp p1"
+            data-name="Moyosoluwa"
+            data-quote="It impacted my finances positively."
+            data-since="customer since '21"
+            data-role="Tech Professional"
+            tabindex="0"
+            role="button"
+            aria-label="View story of Moyosoluwa"
+          >
+            <img
+              src="images/customer-moyosoluwa.jpg"
+              alt="Moyosoluwa"
+              loading="lazy"
+              onerror="this.src='https://cdn.cowrywise.com/images/customers/moyosoluwa.jpg'"
+            /><span class="play" aria-hidden="true"></span>
+            <figcaption>
+              <q>It impacted my finances positively.</q>
+              <small>Moyosoluwa / customer since '21</small>
+            </figcaption>
+          </figure>
+          <figure
+            class="pp p2"
+            data-name="Conscience"
+            data-quote="Makes my money work for me"
+            data-since="customer since '20"
+            data-role="Entrepreneur"
+            tabindex="0"
+            role="button"
+            aria-label="View story of Conscience"
+          >
+            <img
+              src="images/customer-conscience.jpg"
+              alt="Conscience"
+              loading="lazy"
+              onerror="this.src='https://cdn.cowrywise.com/images/customers/conscience.jpg'"
+            /><span class="play" aria-hidden="true"></span>
+            <figcaption>
+              <q>Makes my money work for me</q>
+              <small>Conscience / customer since '20</small>
+            </figcaption>
+          </figure>
+          <figure
+            class="pp p3"
+            data-name="Funmilola"
+            data-quote="Helped improve my saving habits."
+            data-since="customer since '20"
+            data-role="Creative Director"
+            tabindex="0"
+            role="button"
+            aria-label="View story of Funmilola"
+          >
+            <img
+              src="images/customer-funmilola.jpg"
+              alt="Funmilola"
+              loading="lazy"
+              onerror="this.src='https://cdn.cowrywise.com/images/customers/funmilola.jpg'"
+            /><span class="play" aria-hidden="true"></span>
+            <figcaption>
+              <q>Helped improve my saving habits.</q>
+              <small>Funmilola / customer since '20</small>
+            </figcaption>
+          </figure>
+          <figure
+            class="pp p4"
+            data-name="Oyindamola"
+            data-quote="Helped me stay consistent"
+            data-since="customer since '23"
+            data-role="Product Manager"
+            tabindex="0"
+            role="button"
+            aria-label="View story of Oyindamola"
+          >
+            <img
+              src="images/customer-oyindamola.jpg"
+              alt="Oyindamola"
+              loading="lazy"
+              onerror="this.src='https://cdn.cowrywise.com/images/customers/oyindamola.jpg'"
+            /><span class="play" aria-hidden="true"></span>
+            <figcaption>
+              <q>Helped me stay consistent</q>
+              <small>Oyindamola / customer since '23</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta" aria-label="Call to action">
+        <h3>Your future won't wait.</h3>
+        <a href="signup.html">&rarr; Start growing today</a>
+      </section>
+    </main>
+
+    <!-- CUSTOMER STORY MODAL -->
+    <div
+      class="story-modal"
+      id="story-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-author"
+      aria-hidden="true"
+    >
+      <div class="story-backdrop" id="story-backdrop"></div>
+      <div class="story-box">
+        <button
+          class="story-close"
+          id="story-close"
+          type="button"
+          aria-label="Close story"
+        >
+          &times;
+        </button>
+        <div class="story-header">
+          <div class="story-avatar-wrap">
+            <img id="modal-img" src="images/customer-moyosoluwa.jpg" alt="" />
+          </div>
+          <div>
+            <h4 id="modal-author">Moyosoluwa</h4>
+            <span class="story-badge">Verified Customer</span>
+            <p id="modal-since">Customer since '21</p>
+          </div>
+        </div>
+        <div class="story-body">
+          <blockquote id="modal-quote">
+            "It impacted my finances positively."
+          </blockquote>
+          <p id="modal-text">
+            "Before discovering Cowrywise, keeping track of savings and staying disciplined with investments was tough. Setting up automated plans helped me hit my personal milestones faster and stress-free."
+          </p>
+        </div>
+        <div class="story-footer">
+          <a href="signup.html" class="btn">Join Cowrywise today</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="foot">
+      <div class="wrap">
+        <div class="f-top">
+          <div>
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>Trusted by millions of Nigerians like you.</p>
+            <div class="stores">
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-googleplay.svg"
+                  alt="Google Play icon"
+                  class="store-icon"
+                />
+                <span>Get it on<strong>Play Store</strong></span>
+              </a>
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-apple.svg"
+                  alt="Apple icon"
+                  class="store-icon"
+                />
+                <span>Download on<strong>App Store</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="f-cols">
+            <div>
+              <h5>Company</h5>
+              <a href="#">About Us</a><a href="#">Press</a
+              ><a href="#">Careers</a><a href="#">Ambassadors</a
+              ><a href="#">Privacy</a><a href="#">Terms</a>
+            </div>
+            <div>
+              <h5>Product</h5>
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="sprout.html">Sprout</a>
+              <a href="embed.html">Embed API</a>
+            </div>
+            <div>
+              <h5>Resources</h5>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html">Glossary</a>
+              <a href="learn.html#faq">Help Center</a>
+              <a href="#sec-calc-title">Estimate interest</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+            <div>
+              <h5>Contact</h5>
+              <a href="mailto:support@cowrywise.com">support@cowrywise.com</a
+              ><a href="tel:07000269799473">07000COWRYWISE</a
+              ><a href="https://wa.me/2349022979297" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="socials" aria-label="Social media channels">
+          <a
+            href="https://facebook.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Facebook"
+          >
+            <img src="images/icon-facebook.svg" alt="Facebook" />
+          </a>
+          <a
+            href="https://twitter.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Twitter / X"
+          >
+            <img src="images/icon-twitter.svg" alt="Twitter" />
+          </a>
+          <a
+            href="https://instagram.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Instagram"
+          >
+            <img src="images/icon-instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://wa.me/2349022979297"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on WhatsApp"
+          >
+            <img src="images/icon-whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCRApoo2RnIcX4ocFmKZwYSg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on YouTube"
+          >
+            <img src="images/icon-youtube.svg" alt="YouTube" />
+          </a>
+          <a
+            href="https://t.me/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Telegram"
+          >
+            <img src="images/icon-telegram.svg" alt="Telegram" />
+          </a>
+        </div>
+        <div class="f-mid">
+          <span
+            >&#127475;&#127468; &nbsp;5C Reverend Ogunbiyi Street, Ikeja GRA,
+            Lagos Nigeria.</span
+          >
+          <div class="lics">
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span>Cowrywise<strong>Licensed Fund Manager</strong></span>
+            </div>
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span
+                >CFTL Digital<strong>Licensed Digital Sub-broker</strong></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="legal">
+          <p>
+            Cowrywise Financial Technology Limited ("Cowrywise") is a
+            Fund/Portfolio Manager duly licensed by the Securities and Exchange
+            Commission (SEC) of Nigeria, with License #1940 and its sister
+            company, CFTL Digital Services Limited, is a Digital Sub-Broker duly
+            licensed by the SEC, with License #3005.
+          </p>
+          <p>
+            Our mutual funds are managed by our fund management partners and
+            made available to our clients through our web and mobile
+            applications. The fund manager for each mutual fund is disclosed on
+            every mutual fund's profile page. Any historical returns or expected
+            returns are hypothetical in nature and may not reflect actual future
+            performance.
+            <a href="#"
+              >View full list of available mutual funds on Cowrywise.</a
+            >
+          </p>
+          <p>
+            The content on this website does not constitute a complete
+            description of Cowrywise's fund management services. By creating a
+            Cowrywise account, you accept Cowrywise's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>, and
+            by using the stocks feature on Cowrywise, you accept CFTL Digital's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </p>
+          <p>
+            Google Play and the Google Play logo are trademarks of Google LLC.
+            Apple, the Apple logo, and iPhone are trademarks of Apple Inc.
+            registered in the U.S.
+          </p>
+          <p>
+            &copy; 2026 Cowrywise Financial Technology. All rights reserved. RC
+            1419869. <a href="#">NDPC Audited and Compliant</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- COOKIE BAR -->
+    <div class="cookie" id="cookie" role="region" aria-label="Cookie consent">
+      <span
+        >We use cookies on our website to help us provide the best browsing
+        experience. By continuing to use our website you are deemed to have
+        agreed to the use of cookies.</span
+      >
+      <span class="cookie-actions"
+        ><a href="#">Learn More</a
+        ><button id="cookie-ok" type="button">OK</button></span
+      >
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cowrywise Blog - Stories, Wealth Guides & News</title>
+    <meta
+      name="description"
+      content="Practical advice on managing money, investment breakdowns, product announcements, and customer wealth-building stories on the Cowrywise Blog."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="wrap nav-in">
+        <a href="index.html" class="logo" aria-label="Cowrywise Homepage">
+          <img
+            src="images/logo.svg"
+            alt="Cowrywise"
+            class="logo-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+          />
+          <span class="logo-fallback" style="display: none;">
+            <span class="logo-mark"></span>cowrywise
+          </span>
+        </a>
+        <nav class="menu-bar" aria-label="Main navigation">
+          <div class="has-menu">
+            <a href="save.html" class="nav-link">Personal <i class="chev"></i></a>
+            <div class="drop">
+              <a href="save.html"
+                ><b>Savings</b><span>Save and earn amazing returns</span></a
+              >
+              <a href="mutual-funds.html"
+                ><b>Mutual Funds</b><span>Grow your wealth without chasing charts</span></a
+              >
+              <a href="stocks.html"
+                ><b>Stocks</b><span>Own a slice of Nigeria's top companies</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="index.html#sec-calc-title" class="drop-sub"
+                ><b>Estimate your returns &nearr;</b><span>Calculate potential gains</span></a
+              >
+              <a href="mutual-funds.html#risk-assessment" class="drop-sub"
+                ><b>Risk assessment &nearr;</b><span>Find your investor profile</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="sprout.html" class="nav-link">Business <i class="chev"></i></a>
+            <div class="drop">
+              <a href="sprout.html"
+                ><b>Sprout</b><span>Put your business idle cash to work</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="embed.html" class="nav-link">Developer <i class="chev"></i></a>
+            <div class="drop">
+              <a href="embed.html"
+                ><b>Embed</b><span>Offer investment services in your app</span></a
+              >
+              <a href="developers.html"
+                ><b>Docs</b><span>Read how to integrate the Embed API</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="https://embedbycowrywise.slack.com/" target="_blank" rel="noopener noreferrer" class="drop-sub"
+                ><b>Slack Community &nearr;</b><span>Join developers building on Cowrywise</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="learn.html" class="nav-link active">Learn <i class="chev"></i></a>
+            <div class="drop">
+              <a href="learn.html"
+                ><b>Glossary</b><span>Learn from a curation of simple money terms</span></a
+              >
+              <a href="blog.html"
+                ><b>Blog</b><span>Announcements, articles and stories</span></a
+              >
+              <a href="learn.html#faq"
+                ><b>Help Center</b><span>Everything you need to use Cowrywise</span></a
+              >
+            </div>
+          </div>
+        </nav>
+        <div class="nav-cta" id="nav-cta">
+          <a href="login.html" class="login">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Cowrywise" class="logo-img" />
+          </a>
+          <button
+            class="mobile-nav-close"
+            id="mobile-nav-close"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="mobile-nav-body">
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Personal</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual Funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="mutual-funds.html#risk-assessment">Risk Assessment</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Business</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="sprout.html">Sprout (Corporate Treasury)</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Developer</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="embed.html">Embed API</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+          </div>
+          <div class="m-group active">
+            <button class="m-trigger" type="button">
+              <span>Learn</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="learn.html">Glossary</a>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html#faq">Help Center</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav-footer" id="mobile-nav-cta">
+          <a href="login.html" class="btn btn-outline">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO -->
+      <section class="cw-hero">
+        <div class="cw-wrap cw-hero-inner">
+          <div class="cw-pill-badge">
+            <span class="cw-pill-dot"></span>
+            <span>The Cowrywise Editorial</span>
+          </div>
+          <h1 class="cw-hero-title">Stories, guides & thoughts on wealth</h1>
+          <p class="cw-hero-subtitle">
+            Curated articles on personal finance, investment breakdowns, economic insights,
+            and real wealth journeys from our community.
+          </p>
+        </div>
+      </section>
+
+      <!-- FEATURED STORY & CATEGORY FILTER -->
+      <section class="cw-section">
+        <div class="cw-wrap">
+          <!-- Featured Story Card -->
+          <div class="blog-featured">
+            <div style="background: #001738; display: flex; flex-direction: column; justify-content: center; padding: 48px; color: #ffffff;">
+              <span style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #0066f5; margin-bottom: 12px;">
+                Featured Editorial &bull; 6 min read
+              </span>
+              <h2 style="font-size: 28px; font-weight: 800; color: #ffffff; line-height: 1.25; margin-bottom: 16px;">
+                How to Build a Recession-Proof Emergency Fund in Nigeria
+              </h2>
+              <p style="font-size: 15px; color: #94a3b8; line-height: 1.6; margin-bottom: 24px;">
+                A comprehensive guide on calculating your monthly overhead, setting up automated periodic sweeps,
+                and shielding your purchasing power from sudden inflation spikes.
+              </p>
+              <a href="#" class="cw-btn-primary" style="align-self: flex-start; padding: 10px 20px;">Read Full Story &rarr;</a>
+            </div>
+            <div style="background: #eff8ff; display: grid; place-items: center; padding: 40px; border-left: 1px solid #eaecf0;">
+              <div style="text-align: center;">
+                <div style="font-size: 48px; font-weight: 800; color: #0066f5;">14.5%</div>
+                <div style="font-size: 15px; font-weight: 600; color: #001738; margin-top: 4px;">Average Return on Emergency Savings</div>
+                <div style="font-size: 13px; color: #667085; margin-top: 4px;">Compounded Daily on Cowrywise</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="funds-filter-bar" style="margin-bottom: 36px; border-radius: 12px; border: 1px solid #eaecf0;">
+            <button type="button" class="fund-filter-pill blog-filter-pill active" data-cat="all">All Articles</button>
+            <button type="button" class="fund-filter-pill blog-filter-pill" data-cat="investing">Investing</button>
+            <button type="button" class="fund-filter-pill blog-filter-pill" data-cat="savings">Savings</button>
+            <button type="button" class="fund-filter-pill blog-filter-pill" data-cat="fintech">FinTech & Product</button>
+            <button type="button" class="fund-filter-pill blog-filter-pill" data-cat="stories">Customer Stories</button>
+          </div>
+
+          <!-- Articles Grid (Zero Emojis!) -->
+          <div class="cw-grid-3">
+            <div class="cw-card blog-card" data-category="investing">
+              <div class="cw-icon-box">
+                <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              </div>
+              <div style="font-size: 12px; font-weight: 700; color: #667085; text-transform: uppercase; margin-bottom: 6px;">Investing &bull; 4 min read</div>
+              <h3>Understanding Mutual Funds: Which One Matches Your Personality?</h3>
+              <p>Compare conservative money market funds, fixed income, and equities to find the exact portfolio for your goals.</p>
+              <a href="#" class="cw-card-meta">Read article &rarr;</a>
+            </div>
+
+            <div class="cw-card blog-card" data-category="investing">
+              <div class="cw-icon-box green">
+                <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <div style="font-size: 12px; font-weight: 700; color: #667085; text-transform: uppercase; margin-bottom: 6px;">Investing &bull; 5 min read</div>
+              <h3>Why Nigerian Stocks Had a Record-Breaking Quarter on the NGX</h3>
+              <p>An in-depth analysis of corporate earnings, banking recapitalization, and why retail investors are joining in.</p>
+              <a href="#" class="cw-card-meta">Read article &rarr;</a>
+            </div>
+
+            <div class="cw-card blog-card" data-category="savings">
+              <div class="cw-icon-box purple">
+                <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <div style="font-size: 12px; font-weight: 700; color: #667085; text-transform: uppercase; margin-bottom: 6px;">Savings &bull; 3 min read</div>
+              <h3>The Power of 15% Compound Returns: What Happens Over 10 Years</h3>
+              <p>The mathematical reality of consistent discipline versus trying to time short-term financial markets.</p>
+              <a href="#" class="cw-card-meta">Read article &rarr;</a>
+            </div>
+
+            <div class="cw-card blog-card" data-category="fintech">
+              <div class="cw-icon-box amber">
+                <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              </div>
+              <div style="font-size: 12px; font-weight: 700; color: #667085; text-transform: uppercase; margin-bottom: 6px;">FinTech &bull; 4 min read</div>
+              <h3>Sprout by Cowrywise: How African Startups Protect Their Capital</h3>
+              <p>Why leaving venture funding or revenue in current accounts with zero interest costs companies millions.</p>
+              <a href="#" class="cw-card-meta">Read article &rarr;</a>
+            </div>
+
+            <div class="cw-card blog-card" data-category="fintech">
+              <div class="cw-icon-box">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <div style="font-size: 12px; font-weight: 700; color: #667085; text-transform: uppercase; margin-bottom: 6px;">FinTech &bull; 6 min read</div>
+              <h3>Building on Embed API: How 20+ Fintechs Scaled in 6 Months</h3>
+              <p>A deep dive into how digital banks and lending apps offer integrated savings without extra licensing.</p>
+              <a href="#" class="cw-card-meta">Read article &rarr;</a>
+            </div>
+
+            <div class="cw-card blog-card" data-category="stories">
+              <div class="cw-icon-box green">
+                <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </div>
+              <div style="font-size: 12px; font-weight: 700; color: #667085; text-transform: uppercase; margin-bottom: 6px;">Stories &bull; 5 min read</div>
+              <h3>My Financial Journey: From Zero Savings to Buying My First Land</h3>
+              <p>How a creative designer in Ibadan used Cowrywise Circles and locked savings to purchase land in 3 years.</p>
+              <a href="#" class="cw-card-meta">Read article &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIGNATURE BOTTOM CTA BANNER -->
+      <section class="cw-bottom-cta">
+        <div class="cw-wrap cw-bottom-cta-inner">
+          <h2>Your future won't wait. Start growing today.</h2>
+          <p>
+            Join over 1,000,000+ ambitious individuals and businesses building long-term wealth with Cowrywise.
+          </p>
+          <div class="cw-bottom-cta-actions">
+            <a href="signup.html" class="cw-btn-primary" style="background: #ffffff; color: #001738; padding: 14px 32px; font-weight: 700;">
+              Sign up for free
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+        <footer class="foot">
+      <div class="wrap">
+        <div class="f-top">
+          <div>
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>Trusted by millions of Nigerians like you.</p>
+            <div class="stores">
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-googleplay.svg"
+                  alt="Google Play icon"
+                  class="store-icon"
+                />
+                <span>Get it on<strong>Play Store</strong></span>
+              </a>
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-apple.svg"
+                  alt="Apple icon"
+                  class="store-icon"
+                />
+                <span>Download on<strong>App Store</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="f-cols">
+            <div>
+              <h5>Company</h5>
+              <a href="#">About Us</a>
+              <a href="#">Press</a>
+              <a href="#">Careers</a>
+              <a href="#">Ambassadors</a>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+            </div>
+            <div>
+              <h5>Product</h5>
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="sprout.html">Sprout</a>
+              <a href="embed.html">Embed API</a>
+            </div>
+            <div>
+              <h5>Resources</h5>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html">Glossary</a>
+              <a href="learn.html#faq">Help Center</a>
+              <a href="index.html#sec-calc-title">Estimate interest</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+            <div>
+              <h5>Contact</h5>
+              <a href="mailto:support@cowrywise.com">support@cowrywise.com</a>
+              <a href="tel:07000269799473">07000COWRYWISE</a>
+              <a href="https://wa.me/2349022979297" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="socials" aria-label="Social media channels">
+          <a
+            href="https://facebook.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Facebook"
+          >
+            <img src="images/icon-facebook.svg" alt="Facebook" />
+          </a>
+          <a
+            href="https://twitter.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Twitter / X"
+          >
+            <img src="images/icon-twitter.svg" alt="Twitter" />
+          </a>
+          <a
+            href="https://instagram.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Instagram"
+          >
+            <img src="images/icon-instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://wa.me/2349022979297"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on WhatsApp"
+          >
+            <img src="images/icon-whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCRApoo2RnIcX4ocFmKZwYSg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on YouTube"
+          >
+            <img src="images/icon-youtube.svg" alt="YouTube" />
+          </a>
+          <a
+            href="https://t.me/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Telegram"
+          >
+            <img src="images/icon-telegram.svg" alt="Telegram" />
+          </a>
+        </div>
+        <div class="f-mid">
+          <span
+            >&#127475;&#127468; &nbsp;5C Reverend Ogunbiyi Street, Ikeja GRA,
+            Lagos Nigeria.</span
+          >
+          <div class="lics">
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span>Cowrywise<strong>Licensed Fund Manager</strong></span>
+            </div>
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span
+                >CFTL Digital<strong>Licensed Digital Sub-broker</strong></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="legal">
+          <p>
+            Cowrywise Financial Technology Limited ("Cowrywise") is a
+            Fund/Portfolio Manager duly licensed by the Securities and Exchange
+            Commission (SEC) of Nigeria, with License #1940 and its sister
+            company, CFTL Digital Services Limited, is a Digital Sub-Broker duly
+            licensed by the SEC, with License #3005.
+          </p>
+          <p>
+            Our mutual funds are managed by our fund management partners and
+            made available to our clients through our web and mobile
+            applications. The fund manager for each mutual fund is disclosed on
+            every mutual fund's profile page. Any historical returns or expected
+            returns are hypothetical in nature and may not reflect actual future
+            performance.
+            <a href="mutual-funds.html"
+              >View full list of available mutual funds on Cowrywise.</a
+            >
+          </p>
+          <p>
+            The content on this website does not constitute a complete
+            description of Cowrywise's fund management services. By creating a
+            Cowrywise account, you accept Cowrywise's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>, and
+            by using the stocks feature on Cowrywise, you accept CFTL Digital's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </p>
+          <p>
+            Google Play and the Google Play logo are trademarks of Google LLC.
+            Apple, the Apple logo, and iPhone are trademarks of Apple Inc.
+            registered in the U.S.
+          </p>
+          <p>
+            &copy; 2026 Cowrywise Financial Technology. All rights reserved. RC
+            1419869. <a href="#">NDPC Audited and Compliant</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+  </body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprout by Cowrywise - Corporate Treasury & Idle Cash Management</title>
+    <meta
+      name="description"
+      content="Is your business cash doing enough? Sprout helps African businesses, startups, and institutions manage idle corporate funds with high-yield fixed income."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="wrap nav-in">
+        <a href="index.html" class="logo" aria-label="Cowrywise Homepage">
+          <img
+            src="images/logo.svg"
+            alt="Cowrywise"
+            class="logo-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+          />
+          <span class="logo-fallback" style="display: none;">
+            <span class="logo-mark"></span>cowrywise
+          </span>
+        </a>
+        <nav class="menu-bar" aria-label="Main navigation">
+          <div class="has-menu">
+            <a href="save.html" class="nav-link">Personal <i class="chev"></i></a>
+            <div class="drop">
+              <a href="save.html"
+                ><b>Savings</b><span>Save and earn amazing returns</span></a
+              >
+              <a href="mutual-funds.html"
+                ><b>Mutual Funds</b><span>Grow your wealth without chasing charts</span></a
+              >
+              <a href="stocks.html"
+                ><b>Stocks</b><span>Own a slice of Nigeria's top companies</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="index.html#sec-calc-title" class="drop-sub"
+                ><b>Estimate your returns &nearr;</b><span>Calculate potential gains</span></a
+              >
+              <a href="mutual-funds.html#risk-assessment" class="drop-sub"
+                ><b>Risk assessment &nearr;</b><span>Find your investor profile</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="sprout.html" class="nav-link active">Business <i class="chev"></i></a>
+            <div class="drop">
+              <a href="sprout.html"
+                ><b>Sprout</b><span>Put your business idle cash to work</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="embed.html" class="nav-link">Developer <i class="chev"></i></a>
+            <div class="drop">
+              <a href="embed.html"
+                ><b>Embed</b><span>Offer investment services in your app</span></a
+              >
+              <a href="developers.html"
+                ><b>Docs</b><span>Read how to integrate the Embed API</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="https://embedbycowrywise.slack.com/" target="_blank" rel="noopener noreferrer" class="drop-sub"
+                ><b>Slack Community &nearr;</b><span>Join developers building on Cowrywise</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="learn.html" class="nav-link">Learn <i class="chev"></i></a>
+            <div class="drop">
+              <a href="learn.html"
+                ><b>Glossary</b><span>Learn from a curation of simple money terms</span></a
+              >
+              <a href="blog.html"
+                ><b>Blog</b><span>Announcements, articles and stories</span></a
+              >
+              <a href="learn.html#faq"
+                ><b>Help Center</b><span>Everything you need to use Cowrywise</span></a
+              >
+            </div>
+          </div>
+        </nav>
+        <div class="nav-cta" id="nav-cta">
+          <a href="login.html" class="login">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Cowrywise" class="logo-img" />
+          </a>
+          <button
+            class="mobile-nav-close"
+            id="mobile-nav-close"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="mobile-nav-body">
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Personal</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual Funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="mutual-funds.html#risk-assessment">Risk Assessment</a>
+            </div>
+          </div>
+          <div class="m-group active">
+            <button class="m-trigger" type="button">
+              <span>Business</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="sprout.html">Sprout (Corporate Treasury)</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Developer</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="embed.html">Embed API</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Learn</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="learn.html">Glossary</a>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html#faq">Help Center</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav-footer" id="mobile-nav-cta">
+          <a href="login.html" class="btn btn-outline">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO -->
+      <section class="cw-hero">
+        <div class="cw-wrap cw-hero-inner">
+          <div class="cw-pill-badge">
+            <span class="cw-pill-dot"></span>
+            <span>Corporate Treasury Management</span>
+          </div>
+          <h1 class="cw-hero-title">Is your business cash doing enough?</h1>
+          <p class="cw-hero-subtitle">
+            Put your business idle operational reserves to work with institutional safety.
+            Earn up to 16.5% annual returns while preserving liquidity for payroll, vendors, and taxes.
+          </p>
+          <div class="cw-hero-actions">
+            <a href="signup.html" class="cw-btn-primary">Open Sprout Account</a>
+            <a href="#sprout-calc" class="cw-btn-secondary">Calculate Business Returns &darr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURE 1: BIG OR SMALL -->
+      <section class="cw-section">
+        <div class="cw-wrap">
+          <div class="cw-feature-row">
+            <div class="cw-feature-info">
+              <span class="cw-tag">Smart Capital Growth</span>
+              <h3>Big or small, your money should grow</h3>
+              <p>
+                Leaving operational cash sitting in traditional current accounts earning 0% interest while inflation
+                eats away at purchasing power costs African businesses millions annually.
+              </p>
+              <ul class="cw-feature-bullets">
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Multi-Tenor Liquidity:</strong> Choose overnight sweeps, 30-day, 90-day, or custom maturity windows tailored to payroll cycles.</span>
+                </li>
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Institutional Instruments:</strong> Access sovereign Treasury Bills, commercial papers, and AAA debt reserved for corporations.</span>
+                </li>
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Maker-Checker Governance:</strong> Role-based access requiring dual sign-offs for all transactions, ensuring fiduciary compliance.</span>
+                </li>
+              </ul>
+              <div>
+                <a href="signup.html" class="cw-btn-primary">Get started with Sprout &rarr;</a>
+              </div>
+            </div>
+
+            <!-- VISUAL CARD -->
+            <div class="cw-visual-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <span style="font-size: 14px; font-weight: 700; color: #001738;">Corporate Treasury Dashboard</span>
+                <span class="cw-stat-badge" style="margin-bottom: 0;">Multi-Sig Active</span>
+              </div>
+
+              <div style="background: #f8fafd; border: 1px solid #d0e2ff; border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+                <span style="font-size: 12px; color: #667085; text-transform: uppercase; font-weight: 600;">Managed Corporate Balance</span>
+                <div style="font-size: 32px; font-weight: 800; color: #001738; margin: 4px 0;">₦85,420,000.00</div>
+                <span style="font-size: 13px; font-weight: 700; color: #12b76a;">+16.5% Net Annual Return</span>
+              </div>
+
+              <div style="font-size: 13px; font-weight: 600; color: #667085; margin-bottom: 8px;">Active Treasury Tenors</div>
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; justify-content: space-between; font-size: 13.5px; padding-bottom: 8px; border-bottom: 1px dashed #eaecf0;">
+                  <span style="font-weight: 600; color: #001738;">Overnight Sweep (Payroll Buffer)</span>
+                  <strong style="color: #0066f5;">₦25,000,000</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 13.5px; padding-bottom: 8px; border-bottom: 1px dashed #eaecf0;">
+                  <span style="font-weight: 600; color: #001738;">90-Day Treasury (Tax Reserve)</span>
+                  <strong style="color: #0066f5;">₦35,000,000</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 13.5px;">
+                  <span style="font-weight: 600; color: #001738;">180-Day Fixed Commercial Paper</span>
+                  <strong style="color: #0066f5;">₦25,420,000</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPROUT YIELD CALCULATOR -->
+      <section class="cw-section bg-alt" id="sprout-calc">
+        <div class="cw-wrap">
+          <div class="cw-section-head">
+            <span class="cw-tag">Return on Capital</span>
+            <h2>Where trust meets smart returns</h2>
+            <p>See how much additional revenue your business cash can earn each year with Sprout.</p>
+          </div>
+
+          <div class="cw-calc-wrapper">
+            <div class="cw-calc-grid">
+              <div class="cw-calc-inputs">
+                <div>
+                  <div class="cw-calc-label-row">
+                    <span>Idle Corporate Cash Balance</span>
+                    <span class="cw-calc-amount-val" id="sprout-amount-display">₦25,000,000</span>
+                  </div>
+                  <input
+                    type="range"
+                    id="sprout-slider"
+                    class="cw-range-slider"
+                    min="5000000"
+                    max="200000000"
+                    step="5000000"
+                    value="25000000"
+                  />
+                  <div style="display: flex; justify-content: space-between; font-size: 11px; color: #98a2b3; margin-top: 6px;">
+                    <span>₦5 Million</span>
+                    <span>₦100 Million</span>
+                    <span>₦200 Million</span>
+                  </div>
+                </div>
+
+                <div style="font-size: 14px; color: #475467; line-height: 1.6;">
+                  <strong>Best bang for your buck.</strong><br />
+                  Sprout connects corporate treasury balances into high-yield sovereign instruments,
+                  returning up to 16.5% annually with SEC-regulated fund management.
+                </div>
+              </div>
+
+              <!-- PREVIEW BOX -->
+              <div class="cw-calc-preview">
+                <div class="cw-calc-tag">Estimated Extra Corporate Income</div>
+                <div class="cw-calc-total-number" id="sprout-yield-display">₦4,125,000 / year</div>
+                <p style="font-size: 13px; color: #667085; margin-bottom: 24px;">
+                  Calculated at competitive corporate yield rates of ~16.5% p.a.
+                </p>
+                <a href="signup.html" class="cw-btn-primary" style="width: 100%;">Create Business Account</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIGNATURE BOTTOM CTA BANNER -->
+      <section class="cw-bottom-cta">
+        <div class="cw-wrap cw-bottom-cta-inner">
+          <h2>Your future won't wait. Start growing today.</h2>
+          <p>
+            Join over 500+ leading African startups, institutions, and corporations managing treasury with Sprout.
+          </p>
+          <div class="cw-bottom-cta-actions">
+            <a href="signup.html" class="cw-btn-primary" style="background: #ffffff; color: #001738; padding: 14px 32px; font-weight: 700;">
+              Open Sprout Account
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+        <footer class="foot">
+      <div class="wrap">
+        <div class="f-top">
+          <div>
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>Trusted by millions of Nigerians like you.</p>
+            <div class="stores">
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-googleplay.svg"
+                  alt="Google Play icon"
+                  class="store-icon"
+                />
+                <span>Get it on<strong>Play Store</strong></span>
+              </a>
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-apple.svg"
+                  alt="Apple icon"
+                  class="store-icon"
+                />
+                <span>Download on<strong>App Store</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="f-cols">
+            <div>
+              <h5>Company</h5>
+              <a href="#">About Us</a>
+              <a href="#">Press</a>
+              <a href="#">Careers</a>
+              <a href="#">Ambassadors</a>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+            </div>
+            <div>
+              <h5>Product</h5>
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="sprout.html">Sprout</a>
+              <a href="embed.html">Embed API</a>
+            </div>
+            <div>
+              <h5>Resources</h5>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html">Glossary</a>
+              <a href="learn.html#faq">Help Center</a>
+              <a href="index.html#sec-calc-title">Estimate interest</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+            <div>
+              <h5>Contact</h5>
+              <a href="mailto:support@cowrywise.com">support@cowrywise.com</a>
+              <a href="tel:07000269799473">07000COWRYWISE</a>
+              <a href="https://wa.me/2349022979297" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="socials" aria-label="Social media channels">
+          <a
+            href="https://facebook.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Facebook"
+          >
+            <img src="images/icon-facebook.svg" alt="Facebook" />
+          </a>
+          <a
+            href="https://twitter.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Twitter / X"
+          >
+            <img src="images/icon-twitter.svg" alt="Twitter" />
+          </a>
+          <a
+            href="https://instagram.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Instagram"
+          >
+            <img src="images/icon-instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://wa.me/2349022979297"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on WhatsApp"
+          >
+            <img src="images/icon-whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCRApoo2RnIcX4ocFmKZwYSg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on YouTube"
+          >
+            <img src="images/icon-youtube.svg" alt="YouTube" />
+          </a>
+          <a
+            href="https://t.me/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Telegram"
+          >
+            <img src="images/icon-telegram.svg" alt="Telegram" />
+          </a>
+        </div>
+        <div class="f-mid">
+          <span
+            >&#127475;&#127468; &nbsp;5C Reverend Ogunbiyi Street, Ikeja GRA,
+            Lagos Nigeria.</span
+          >
+          <div class="lics">
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span>Cowrywise<strong>Licensed Fund Manager</strong></span>
+            </div>
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span
+                >CFTL Digital<strong>Licensed Digital Sub-broker</strong></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="legal">
+          <p>
+            Cowrywise Financial Technology Limited ("Cowrywise") is a
+            Fund/Portfolio Manager duly licensed by the Securities and Exchange
+            Commission (SEC) of Nigeria, with License #1940 and its sister
+            company, CFTL Digital Services Limited, is a Digital Sub-Broker duly
+            licensed by the SEC, with License #3005.
+          </p>
+          <p>
+            Our mutual funds are managed by our fund management partners and
+            made available to our clients through our web and mobile
+            applications. The fund manager for each mutual fund is disclosed on
+            every mutual fund's profile page. Any historical returns or expected
+            returns are hypothetical in nature and may not reflect actual future
+            performance.
+            <a href="mutual-funds.html"
+              >View full list of available mutual funds on Cowrywise.</a
+            >
+          </p>
+          <p>
+            The content on this website does not constitute a complete
+            description of Cowrywise's fund management services. By creating a
+            Cowrywise account, you accept Cowrywise's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>, and
+            by using the stocks feature on Cowrywise, you accept CFTL Digital's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </p>
+          <p>
+            Google Play and the Google Play logo are trademarks of Google LLC.
+            Apple, the Apple logo, and iPhone are trademarks of Apple Inc.
+            registered in the U.S.
+          </p>
+          <p>
+            &copy; 2026 Cowrywise Financial Technology. All rights reserved. RC
+            1419869. <a href="#">NDPC Audited and Compliant</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+  </body>
+</html>

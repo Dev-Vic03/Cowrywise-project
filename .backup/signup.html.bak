@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080c11" />
+    <meta
+      name="description"
+      content="Start your investment journey with Cowrywise. Save, invest in mutual funds and stocks online with top returns and bank-grade security."
+    />
+    <title>Cowrywise - Start your investment journey</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <div class="auth-page">
+      <!-- TOP LOGO HEADER -->
+      <header class="auth-top-nav">
+        <a href="index.html" class="auth-logo-link" aria-label="Cowrywise Homepage">
+          <img src="images/logo-white.svg" alt="Cowrywise" class="auth-logo-img" />
+        </a>
+      </header>
+
+      <!-- CENTER CONTENT -->
+      <main class="auth-center-container">
+        <!-- LEFT COLUMN: SIGNUP CARD -->
+        <div class="auth-card-column">
+          <div class="auth-card signup-card">
+            <h1 class="auth-card-title">Start your<br />investment journey</h1>
+            <p class="auth-card-sublink">
+              Got an account?
+              <a href="login.html" class="blue-link">Sign In</a>
+            </p>
+
+            <div id="auth-alert" class="auth-msg" role="alert"></div>
+
+            <!-- GOOGLE SIGNUP BUTTON -->
+            <div class="social-btn-single">
+              <button type="button" class="btn-social btn-social-pill btn-google">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="#4285F4"
+                    d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17Z"
+                  />
+                  <path
+                    fill="#34A853"
+                    d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.27 21.41 7.33 24 12 24Z"
+                  />
+                  <path
+                    fill="#FBBC05"
+                    d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15Z"
+                  />
+                  <path
+                    fill="#EA4335"
+                    d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.27 2.59 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98Z"
+                  />
+                </svg>
+                <span>Sign up with Google</span>
+              </button>
+            </div>
+
+            <!-- DIVIDER -->
+            <div class="auth-divider">
+              <span>or</span>
+            </div>
+
+            <!-- SIGNUP FORM (EMAIL STEP) -->
+            <form id="signup-form" novalidate>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="signup-email"
+                  class="dark-input"
+                  placeholder="Email Address"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <!-- OPTIONAL EXPANDED FIELDS (SHOWS SMOOTHLY AFTER EMAIL OR DIRECT SUBMIT) -->
+              <div id="signup-extra-fields" style="display: none;">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="first-name"
+                    class="dark-input"
+                    placeholder="First Name"
+                    autocomplete="given-name"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="last-name"
+                    class="dark-input"
+                    placeholder="Last Name"
+                    autocomplete="family-name"
+                  />
+                </div>
+                <div class="form-group pw-input-wrap">
+                  <input
+                    type="password"
+                    id="signup-password"
+                    class="dark-input"
+                    placeholder="Create a Password"
+                    autocomplete="new-password"
+                  />
+                  <button
+                    type="button"
+                    class="pw-eye-btn"
+                    aria-label="Toggle password visibility"
+                  >
+                    <svg
+                      class="icon-eye"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </svg>
+                    <svg
+                      class="icon-eye-off"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      style="display: none;"
+                    >
+                      <path
+                        d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"
+                      />
+                      <line x1="1" y1="1" x2="23" y2="23" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn-submit">
+                <span class="submit-spinner" aria-hidden="true"></span>
+                <span class="submit-text">Continue</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- NEED HELP LINK -->
+          <div class="auth-sub-links">
+            <a href="#" class="blue-link">Need Help?</a>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: PROMO & 3D MAP ILLUSTRATION -->
+        <div class="signup-right-panel">
+          <div class="signup-side-text">
+            <h2 class="side-title">Don't wait to start</h2>
+            <p class="side-sub">
+              See how much you could have earned in the past few years
+            </p>
+            <a href="index.html#sec-calc-title" class="missed-link">
+              <span class="sparkle">&#10022;</span>
+              <span>See what you missed</span>
+              <span class="chev-right">&rsaquo;</span>
+            </a>
+          </div>
+
+          <div class="signup-map-wrap">
+            <img
+              src="images/signup-map.png"
+              alt="Cowrywise 3D Investment Journey Map"
+              class="signup-map-img"
+            />
+          </div>
+        </div>
+      </main>
+
+      <!-- BOTTOM FOOTER -->
+      <footer class="dark-footer">
+        <p>
+          Cowrywise is licensed by the SEC as a Fund Manager. CFTL Digital is
+          licensed by the SEC as a digital sub-broker with Meristem Stockbrokers as
+          its sponsoring broker.
+        </p>
+      </footer>
+    </div>
+
+    <!-- FLOATING CHAT WIDGET -->
+    <button type="button" class="floating-chat-btn" aria-label="Chat with support">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"
+        />
+        <circle cx="8" cy="10" r="1.25" />
+        <circle cx="12" cy="10" r="1.25" />
+        <circle cx="16" cy="10" r="1.25" />
+      </svg>
+    </button>
+
+    <script src="auth.js"></script>
+  </body>
+</html>

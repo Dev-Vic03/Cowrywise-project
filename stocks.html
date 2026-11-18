@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Market is Open. Trade Nigerian Stocks | Cowrywise</title>
+    <meta
+      name="description"
+      content="Tap into the Nigerian capital market with Cowrywise. Buy shares in MTN, Dangote, GTCO, Zenith, and Airtel on the NGX with CFTL Digital and Meristem Stockbrokers."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="wrap nav-in">
+        <a href="index.html" class="logo" aria-label="Cowrywise Homepage">
+          <img
+            src="images/logo.svg"
+            alt="Cowrywise"
+            class="logo-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+          />
+          <span class="logo-fallback" style="display: none;">
+            <span class="logo-mark"></span>cowrywise
+          </span>
+        </a>
+        <nav class="menu-bar" aria-label="Main navigation">
+          <div class="has-menu">
+            <a href="stocks.html" class="nav-link active">Personal <i class="chev"></i></a>
+            <div class="drop">
+              <a href="save.html"
+                ><b>Savings</b><span>Save and earn amazing returns</span></a
+              >
+              <a href="mutual-funds.html"
+                ><b>Mutual Funds</b><span>Grow your wealth without chasing charts</span></a
+              >
+              <a href="stocks.html"
+                ><b>Stocks</b><span>Own a slice of Nigeria's top companies</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="index.html#sec-calc-title" class="drop-sub"
+                ><b>Estimate your returns &nearr;</b><span>Calculate potential gains</span></a
+              >
+              <a href="mutual-funds.html#risk-assessment" class="drop-sub"
+                ><b>Risk assessment &nearr;</b><span>Find your investor profile</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="sprout.html" class="nav-link">Business <i class="chev"></i></a>
+            <div class="drop">
+              <a href="sprout.html"
+                ><b>Sprout</b><span>Put your business idle cash to work</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="embed.html" class="nav-link">Developer <i class="chev"></i></a>
+            <div class="drop">
+              <a href="embed.html"
+                ><b>Embed</b><span>Offer investment services in your app</span></a
+              >
+              <a href="developers.html"
+                ><b>Docs</b><span>Read how to integrate the Embed API</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="https://embedbycowrywise.slack.com/" target="_blank" rel="noopener noreferrer" class="drop-sub"
+                ><b>Slack Community &nearr;</b><span>Join developers building on Cowrywise</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="learn.html" class="nav-link">Learn <i class="chev"></i></a>
+            <div class="drop">
+              <a href="learn.html"
+                ><b>Glossary</b><span>Learn from a curation of simple money terms</span></a
+              >
+              <a href="blog.html"
+                ><b>Blog</b><span>Announcements, articles and stories</span></a
+              >
+              <a href="learn.html#faq"
+                ><b>Help Center</b><span>Everything you need to use Cowrywise</span></a
+              >
+            </div>
+          </div>
+        </nav>
+        <div class="nav-cta" id="nav-cta">
+          <a href="login.html" class="login">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Cowrywise" class="logo-img" />
+          </a>
+          <button
+            class="mobile-nav-close"
+            id="mobile-nav-close"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="mobile-nav-body">
+          <div class="m-group active">
+            <button class="m-trigger" type="button">
+              <span>Personal</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual Funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="mutual-funds.html#risk-assessment">Risk Assessment</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Business</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="sprout.html">Sprout (Corporate Treasury)</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Developer</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="embed.html">Embed API</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Learn</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="learn.html">Glossary</a>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html#faq">Help Center</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav-footer" id="mobile-nav-cta">
+          <a href="login.html" class="btn btn-outline">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO -->
+      <section class="cw-hero">
+        <div class="cw-wrap cw-hero-inner">
+          <div class="cw-pill-badge">
+            <span class="cw-pill-dot"></span>
+            <span>Nigerian Exchange (NGX) Equities</span>
+          </div>
+          <h1 class="cw-hero-title">The market is open. Get on board.</h1>
+          <p class="cw-hero-subtitle">
+            Tap into the Nigerian capital market. Co-own Nigeria's top market leaders,
+            from telecommunications to banking and consumer goods, with transparent 1.35% brokerage fees.
+          </p>
+          <div class="cw-hero-actions">
+            <a href="signup.html" class="cw-btn-primary">Start Trading Stocks</a>
+            <a href="#market-movers" class="cw-btn-secondary">View Market Movers &darr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARKET MOVERS (REAL TIME TICKER) -->
+      <section class="cw-section" id="market-movers">
+        <div class="cw-wrap">
+          <div class="cw-section-head">
+            <span class="cw-tag">Market Watch</span>
+            <h2>What’s moving the market?</h2>
+            <p>Track real-time prices and trading volumes for blue-chip companies on the NGX.</p>
+          </div>
+
+          <div class="stocks-grid">
+            <div class="stock-card">
+              <div class="stock-header">
+                <div>
+                  <div class="stock-symbol">MTNN</div>
+                  <div class="stock-company">MTN Nigeria Telecom</div>
+                </div>
+                <span class="stock-badge-up">+2.45%</span>
+              </div>
+              <div class="stock-price">₦220.50</div>
+              <div class="stock-volume">Vol: 14.2M shares &bull; NGX 30</div>
+            </div>
+
+            <div class="stock-card">
+              <div class="stock-header">
+                <div>
+                  <div class="stock-symbol">DANGCEM</div>
+                  <div class="stock-company">Dangote Cement Plc</div>
+                </div>
+                <span class="stock-badge-up">+1.80%</span>
+              </div>
+              <div class="stock-price">₦650.00</div>
+              <div class="stock-volume">Vol: 4.8M shares &bull; Industrial</div>
+            </div>
+
+            <div class="stock-card">
+              <div class="stock-header">
+                <div>
+                  <div class="stock-symbol">GTCO</div>
+                  <div class="stock-company">Guaranty Trust Holding</div>
+                </div>
+                <span class="stock-badge-up">+3.12%</span>
+              </div>
+              <div class="stock-price">₦48.20</div>
+              <div class="stock-volume">Vol: 28.5M shares &bull; Banking</div>
+            </div>
+
+            <div class="stock-card">
+              <div class="stock-header">
+                <div>
+                  <div class="stock-symbol">ZENITHBANK</div>
+                  <div class="stock-company">Zenith Bank Plc</div>
+                </div>
+                <span class="stock-badge-up">+1.55%</span>
+              </div>
+              <div class="stock-price">₦42.10</div>
+              <div class="stock-volume">Vol: 31.0M shares &bull; Banking</div>
+            </div>
+
+            <div class="stock-card">
+              <div class="stock-header">
+                <div>
+                  <div class="stock-symbol">AIRTELAFRI</div>
+                  <div class="stock-company">Airtel Africa Plc</div>
+                </div>
+                <span class="stock-badge-up">+0.95%</span>
+              </div>
+              <div class="stock-price">₦2,100.00</div>
+              <div class="stock-volume">Vol: 1.2M shares &bull; Telecom</div>
+            </div>
+
+            <div class="stock-card">
+              <div class="stock-header">
+                <div>
+                  <div class="stock-symbol">BUAFOODS</div>
+                  <div class="stock-company">BUA Foods Plc</div>
+                </div>
+                <span class="stock-badge-up">+4.20%</span>
+              </div>
+              <div class="stock-price">₦380.00</div>
+              <div class="stock-volume">Vol: 6.7M shares &bull; Consumer Goods</div>
+            </div>
+
+            <div class="stock-card">
+              <div class="stock-header">
+                <div>
+                  <div class="stock-symbol">SEPLAT</div>
+                  <div class="stock-company">Seplat Energy Plc</div>
+                </div>
+                <span class="stock-badge-up">+2.10%</span>
+              </div>
+              <div class="stock-price">₦3,450.00</div>
+              <div class="stock-volume">Vol: 850k shares &bull; Energy</div>
+            </div>
+
+            <div class="stock-card">
+              <div class="stock-header">
+                <div>
+                  <div class="stock-symbol">ACCESSCORP</div>
+                  <div class="stock-company">Access Holdings Plc</div>
+                </div>
+                <span class="stock-badge-up">+1.25%</span>
+              </div>
+              <div class="stock-price">₦23.80</div>
+              <div class="stock-volume">Vol: 22.4M shares &bull; Banking</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURE: BUILT FOR THE NEXT GENERATION -->
+      <section class="cw-section bg-alt">
+        <div class="cw-wrap">
+          <div class="cw-feature-row">
+            <div class="cw-feature-info">
+              <span class="cw-tag">Frictionless Investing</span>
+              <h3>Built for the next generation of investors</h3>
+              <p>
+                Forget paperwork, manual stockbroker forms, and endless telephone calls.
+                Cowrywise puts the Nigerian Exchange directly on your smartphone with instant settlement.
+              </p>
+              <ul class="cw-feature-bullets">
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Instant CSCS Account:</strong> Get your Clearing House Number (CHN) generated in under 3 minutes automatically.</span>
+                </li>
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Automated Dividend Payouts:</strong> Cash dividends land right inside your Stash wallet with zero paper dividend warrants.</span>
+                </li>
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Zero Custody Charges:</strong> You only pay the transparent 1.35% standard brokerage fee when you execute a trade. No hidden account maintenance fees.</span>
+                </li>
+              </ul>
+              <div>
+                <a href="signup.html" class="cw-btn-primary">Open Stock Account &rarr;</a>
+              </div>
+            </div>
+
+            <!-- VISUAL CARD -->
+            <div class="cw-visual-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <span style="font-size: 14px; font-weight: 700; color: #001738;">Portfolio Summary</span>
+                <span class="cw-stat-badge" style="margin-bottom: 0;">Verified CSCS</span>
+              </div>
+
+              <div style="background: #f8fafd; border: 1px solid #d0e2ff; border-radius: 12px; padding: 18px; margin-bottom: 20px;">
+                <span style="font-size: 12px; color: #667085; text-transform: uppercase; font-weight: 600;">Total Stock Value</span>
+                <div style="font-size: 28px; font-weight: 800; color: #001738; margin: 4px 0;">₦1,480,250.00</div>
+                <span style="font-size: 13px; font-weight: 700; color: #12b76a;">+18.4% All-time Gain</span>
+              </div>
+
+              <div style="font-size: 13px; font-weight: 600; color: #667085; margin-bottom: 8px;">Holdings Breakdown</div>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div style="display: flex; justify-content: space-between; font-size: 13.5px;">
+                  <span style="font-weight: 600; color: #001738;">MTN Nigeria (2,500 units)</span>
+                  <strong style="color: #0066f5;">₦551,250</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 13.5px;">
+                  <span style="font-weight: 600; color: #001738;">GTCO (10,000 units)</span>
+                  <strong style="color: #0066f5;">₦482,000</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 13.5px;">
+                  <span style="font-weight: 600; color: #001738;">Dangote Cement (700 units)</span>
+                  <strong style="color: #0066f5;">₦455,000</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIGNATURE BOTTOM CTA BANNER -->
+      <section class="cw-bottom-cta">
+        <div class="cw-wrap cw-bottom-cta-inner">
+          <h2>Your future won't wait. Start growing today.</h2>
+          <p>
+            Join over 1,000,000+ ambitious individuals and businesses building long-term wealth with Cowrywise.
+          </p>
+          <div class="cw-bottom-cta-actions">
+            <a href="signup.html" class="cw-btn-primary" style="background: #ffffff; color: #001738; padding: 14px 32px; font-weight: 700;">
+              Sign up for free
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+        <footer class="foot">
+      <div class="wrap">
+        <div class="f-top">
+          <div>
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>Trusted by millions of Nigerians like you.</p>
+            <div class="stores">
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-googleplay.svg"
+                  alt="Google Play icon"
+                  class="store-icon"
+                />
+                <span>Get it on<strong>Play Store</strong></span>
+              </a>
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-apple.svg"
+                  alt="Apple icon"
+                  class="store-icon"
+                />
+                <span>Download on<strong>App Store</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="f-cols">
+            <div>
+              <h5>Company</h5>
+              <a href="#">About Us</a>
+              <a href="#">Press</a>
+              <a href="#">Careers</a>
+              <a href="#">Ambassadors</a>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+            </div>
+            <div>
+              <h5>Product</h5>
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="sprout.html">Sprout</a>
+              <a href="embed.html">Embed API</a>
+            </div>
+            <div>
+              <h5>Resources</h5>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html">Glossary</a>
+              <a href="learn.html#faq">Help Center</a>
+              <a href="index.html#sec-calc-title">Estimate interest</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+            <div>
+              <h5>Contact</h5>
+              <a href="mailto:support@cowrywise.com">support@cowrywise.com</a>
+              <a href="tel:07000269799473">07000COWRYWISE</a>
+              <a href="https://wa.me/2349022979297" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="socials" aria-label="Social media channels">
+          <a
+            href="https://facebook.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Facebook"
+          >
+            <img src="images/icon-facebook.svg" alt="Facebook" />
+          </a>
+          <a
+            href="https://twitter.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Twitter / X"
+          >
+            <img src="images/icon-twitter.svg" alt="Twitter" />
+          </a>
+          <a
+            href="https://instagram.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Instagram"
+          >
+            <img src="images/icon-instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://wa.me/2349022979297"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on WhatsApp"
+          >
+            <img src="images/icon-whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCRApoo2RnIcX4ocFmKZwYSg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on YouTube"
+          >
+            <img src="images/icon-youtube.svg" alt="YouTube" />
+          </a>
+          <a
+            href="https://t.me/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Telegram"
+          >
+            <img src="images/icon-telegram.svg" alt="Telegram" />
+          </a>
+        </div>
+        <div class="f-mid">
+          <span
+            >&#127475;&#127468; &nbsp;5C Reverend Ogunbiyi Street, Ikeja GRA,
+            Lagos Nigeria.</span
+          >
+          <div class="lics">
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span>Cowrywise<strong>Licensed Fund Manager</strong></span>
+            </div>
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span
+                >CFTL Digital<strong>Licensed Digital Sub-broker</strong></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="legal">
+          <p>
+            Cowrywise Financial Technology Limited ("Cowrywise") is a
+            Fund/Portfolio Manager duly licensed by the Securities and Exchange
+            Commission (SEC) of Nigeria, with License #1940 and its sister
+            company, CFTL Digital Services Limited, is a Digital Sub-Broker duly
+            licensed by the SEC, with License #3005.
+          </p>
+          <p>
+            Our mutual funds are managed by our fund management partners and
+            made available to our clients through our web and mobile
+            applications. The fund manager for each mutual fund is disclosed on
+            every mutual fund's profile page. Any historical returns or expected
+            returns are hypothetical in nature and may not reflect actual future
+            performance.
+            <a href="mutual-funds.html"
+              >View full list of available mutual funds on Cowrywise.</a
+            >
+          </p>
+          <p>
+            The content on this website does not constitute a complete
+            description of Cowrywise's fund management services. By creating a
+            Cowrywise account, you accept Cowrywise's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>, and
+            by using the stocks feature on Cowrywise, you accept CFTL Digital's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </p>
+          <p>
+            Google Play and the Google Play logo are trademarks of Google LLC.
+            Apple, the Apple logo, and iPhone are trademarks of Apple Inc.
+            registered in the U.S.
+          </p>
+          <p>
+            &copy; 2026 Cowrywise Financial Technology. All rights reserved. RC
+            1419869. <a href="#">NDPC Audited and Compliant</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+  </body>
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutual Funds - Curated & Licensed Portfolio Investing | Cowrywise</title>
+    <meta
+      name="description"
+      content="Invest in expertly curated mutual funds managed by Nigeria's top licensed asset managers: Meristem, United Capital, Stanbic IBTC, ARM, and Lotus Capital."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="wrap nav-in">
+        <a href="index.html" class="logo" aria-label="Cowrywise Homepage">
+          <img
+            src="images/logo.svg"
+            alt="Cowrywise"
+            class="logo-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+          />
+          <span class="logo-fallback" style="display: none;">
+            <span class="logo-mark"></span>cowrywise
+          </span>
+        </a>
+        <nav class="menu-bar" aria-label="Main navigation">
+          <div class="has-menu">
+            <a href="mutual-funds.html" class="nav-link active">Personal <i class="chev"></i></a>
+            <div class="drop">
+              <a href="save.html"
+                ><b>Savings</b><span>Save and earn amazing returns</span></a
+              >
+              <a href="mutual-funds.html"
+                ><b>Mutual Funds</b><span>Grow your wealth without chasing charts</span></a
+              >
+              <a href="stocks.html"
+                ><b>Stocks</b><span>Own a slice of Nigeria's top companies</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="index.html#sec-calc-title" class="drop-sub"
+                ><b>Estimate your returns &nearr;</b><span>Calculate potential gains</span></a
+              >
+              <a href="#risk-assessment" class="drop-sub"
+                ><b>Risk assessment &nearr;</b><span>Find your investor profile</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="sprout.html" class="nav-link">Business <i class="chev"></i></a>
+            <div class="drop">
+              <a href="sprout.html"
+                ><b>Sprout</b><span>Put your business idle cash to work</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="embed.html" class="nav-link">Developer <i class="chev"></i></a>
+            <div class="drop">
+              <a href="embed.html"
+                ><b>Embed</b><span>Offer investment services in your app</span></a
+              >
+              <a href="developers.html"
+                ><b>Docs</b><span>Read how to integrate the Embed API</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="https://embedbycowrywise.slack.com/" target="_blank" rel="noopener noreferrer" class="drop-sub"
+                ><b>Slack Community &nearr;</b><span>Join developers building on Cowrywise</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="learn.html" class="nav-link">Learn <i class="chev"></i></a>
+            <div class="drop">
+              <a href="learn.html"
+                ><b>Glossary</b><span>Learn from a curation of simple money terms</span></a
+              >
+              <a href="blog.html"
+                ><b>Blog</b><span>Announcements, articles and stories</span></a
+              >
+              <a href="learn.html#faq"
+                ><b>Help Center</b><span>Everything you need to use Cowrywise</span></a
+              >
+            </div>
+          </div>
+        </nav>
+        <div class="nav-cta" id="nav-cta">
+          <a href="login.html" class="login">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Cowrywise" class="logo-img" />
+          </a>
+          <button
+            class="mobile-nav-close"
+            id="mobile-nav-close"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="mobile-nav-body">
+          <div class="m-group active">
+            <button class="m-trigger" type="button">
+              <span>Personal</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual Funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="#risk-assessment">Risk Assessment</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Business</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="sprout.html">Sprout (Corporate Treasury)</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Developer</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="embed.html">Embed API</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Learn</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="learn.html">Glossary</a>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html#faq">Help Center</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav-footer" id="mobile-nav-cta">
+          <a href="login.html" class="btn btn-outline">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO -->
+      <section class="cw-hero">
+        <div class="cw-wrap cw-hero-inner">
+          <div class="cw-pill-badge">
+            <span class="cw-pill-dot"></span>
+            <span>SEC Licensed Asset Management</span>
+          </div>
+          <h1 class="cw-hero-title">Expertly curated investments, just for you</h1>
+          <p class="cw-hero-subtitle">
+            Grow your wealth without chasing charts every day. Invest in diversified,
+            professionally managed mutual funds from Nigeria's top asset managers starting with just ₦1,000.
+          </p>
+          <div class="cw-hero-actions">
+            <a href="signup.html" class="cw-btn-primary">Explore Mutual Funds</a>
+            <a href="#risk-assessment" class="cw-btn-secondary">Take Risk Quiz &darr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURE 1: WHY MUTUAL FUNDS -->
+      <section class="cw-section">
+        <div class="cw-wrap">
+          <div class="cw-feature-row">
+            <div class="cw-feature-info">
+              <span class="cw-tag">Stress-Free Wealth</span>
+              <h3>Invest without guesswork</h3>
+              <p>
+                Mutual funds pool your money with other investors and are managed by licensed investment
+                professionals who know the financial markets inside out.
+              </p>
+              <ul class="cw-feature-bullets">
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Automatic Diversification:</strong> Your money is spread across sovereign bonds, treasury bills, and blue-chip stocks to minimize risk.</span>
+                </li>
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Accessible to Everyone:</strong> No need for millions. You can begin building an institutional-grade portfolio with only ₦1,000.</span>
+                </li>
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Regulated Custodians:</strong> Independent SEC-registered trustees hold every asset securely, completely separate from company operations.</span>
+                </li>
+              </ul>
+              <div>
+                <a href="signup.html" class="cw-btn-primary">Start with ₦1,000 &rarr;</a>
+              </div>
+            </div>
+
+            <!-- VISUAL CARD -->
+            <div class="cw-visual-card">
+              <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; color: #667085; margin-bottom: 6px;">
+                Portfolio Asset Allocation
+              </div>
+              <div style="font-size: 24px; font-weight: 800; color: #001738; margin-bottom: 18px;">
+                Moderate Balanced Fund
+              </div>
+
+              <!-- Allocation Bars -->
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; margin-bottom: 4px;">
+                    <span>Government Treasury Bills</span>
+                    <span style="color: #0066f5;">50%</span>
+                  </div>
+                  <div class="cw-mini-meter"><div class="cw-mini-meter-fill" style="width: 50%;"></div></div>
+                </div>
+
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; margin-bottom: 4px;">
+                    <span>Sovereign & Corporate Bonds</span>
+                    <span style="color: #12b76a;">30%</span>
+                  </div>
+                  <div class="cw-mini-meter"><div class="cw-mini-meter-fill" style="width: 30%; background: #12b76a;"></div></div>
+                </div>
+
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; margin-bottom: 4px;">
+                    <span>Top NGX Blue-Chip Equities</span>
+                    <span style="color: #7f56d9;">20%</span>
+                  </div>
+                  <div class="cw-mini-meter"><div class="cw-mini-meter-fill" style="width: 20%; background: #7f56d9;"></div></div>
+                </div>
+              </div>
+
+              <div style="border-top: 1px solid #eaecf0; margin-top: 24px; padding-top: 18px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 13px; color: #667085;">30-Day Annualized Return</span>
+                <span style="font-size: 18px; font-weight: 800; color: #12b76a;">16.85% p.a.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURE 2: EXPLORE MUTUAL FUNDS TABLE -->
+      <section class="cw-section bg-alt">
+        <div class="cw-wrap">
+          <div class="cw-section-head">
+            <span class="cw-tag">Live Market Offerings</span>
+            <h2>Compare Top Mutual Funds in Nigeria</h2>
+            <p>Direct access to funds managed by licensed institutional fund managers.</p>
+          </div>
+
+          <div class="funds-container">
+            <div class="funds-filter-bar">
+              <button type="button" class="fund-filter-pill active" data-filter="all">All Funds</button>
+              <button type="button" class="fund-filter-pill" data-filter="money-market">Money Market</button>
+              <button type="button" class="fund-filter-pill" data-filter="fixed-income">Fixed Income</button>
+              <button type="button" class="fund-filter-pill" data-filter="halal">Halal / Ethical</button>
+              <button type="button" class="fund-filter-pill" data-filter="equity">Equity & Balanced</button>
+            </div>
+
+            <div class="table-responsive">
+              <table class="cw-table">
+                <thead>
+                  <tr>
+                    <th>Fund Name</th>
+                    <th>Manager</th>
+                    <th>Risk Profile</th>
+                    <th>Annualized Yield</th>
+                    <th>Minimum Entry</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="fund-row" data-category="money-market">
+                    <td class="fund-name-cell">
+                      <strong>Meristem Money Market Fund</strong>
+                      <span>Low volatility, high liquidity treasury bills</span>
+                    </td>
+                    <td>Meristem Wealth</td>
+                    <td><span class="risk-pill risk-low">Low Risk</span></td>
+                    <td class="return-val">15.20%</td>
+                    <td>₦1,000</td>
+                    <td><a href="signup.html" class="cw-btn-primary" style="padding: 8px 16px; font-size: 13px;">Invest</a></td>
+                  </tr>
+
+                  <tr class="fund-row" data-category="fixed-income">
+                    <td class="fund-name-cell">
+                      <strong>United Capital Fixed Income Fund</strong>
+                      <span>Bonds and sovereign debt instruments</span>
+                    </td>
+                    <td>United Capital</td>
+                    <td><span class="risk-pill risk-medium">Medium Risk</span></td>
+                    <td class="return-val">16.85%</td>
+                    <td>₦5,000</td>
+                    <td><a href="signup.html" class="cw-btn-primary" style="padding: 8px 16px; font-size: 13px;">Invest</a></td>
+                  </tr>
+
+                  <tr class="fund-row" data-category="money-market">
+                    <td class="fund-name-cell">
+                      <strong>Stanbic IBTC Money Market Fund</strong>
+                      <span>Short-term prime commercial paper</span>
+                    </td>
+                    <td>Stanbic IBTC Asset Mgt</td>
+                    <td><span class="risk-pill risk-low">Low Risk</span></td>
+                    <td class="return-val">14.90%</td>
+                    <td>₦1,000</td>
+                    <td><a href="signup.html" class="cw-btn-primary" style="padding: 8px 16px; font-size: 13px;">Invest</a></td>
+                  </tr>
+
+                  <tr class="fund-row" data-category="halal">
+                    <td class="fund-name-cell">
+                      <strong>Lotus Halal Investment Fund</strong>
+                      <span>Sukuk bonds and ethical non-interest assets</span>
+                    </td>
+                    <td>Lotus Capital</td>
+                    <td><span class="risk-pill risk-low">Low Risk</span></td>
+                    <td class="return-val">15.60%</td>
+                    <td>₦5,000</td>
+                    <td><a href="signup.html" class="cw-btn-primary" style="padding: 8px 16px; font-size: 13px;">Invest</a></td>
+                  </tr>
+
+                  <tr class="fund-row" data-category="equity">
+                    <td class="fund-name-cell">
+                      <strong>Afrinvest Equity Fund</strong>
+                      <span>Blue-chip Nigerian equities for growth</span>
+                    </td>
+                    <td>Afrinvest Asset Mgt</td>
+                    <td><span class="risk-pill risk-high">High Risk</span></td>
+                    <td class="return-val">24.50%</td>
+                    <td>₦10,000</td>
+                    <td><a href="signup.html" class="cw-btn-primary" style="padding: 8px 16px; font-size: 13px;">Invest</a></td>
+                  </tr>
+
+                  <tr class="fund-row" data-category="equity">
+                    <td class="fund-name-cell">
+                      <strong>ARM Discovery & Balanced Fund</strong>
+                      <span>Balanced mix of real estate, stocks & cash</span>
+                    </td>
+                    <td>ARM Investment Mgt</td>
+                    <td><span class="risk-pill risk-medium">Medium Risk</span></td>
+                    <td class="return-val">17.40%</td>
+                    <td>₦5,000</td>
+                    <td><a href="signup.html" class="cw-btn-primary" style="padding: 8px 16px; font-size: 13px;">Invest</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURE 3: RISK ASSESSMENT QUIZ -->
+      <section class="cw-section" id="risk-assessment">
+        <div class="cw-wrap">
+          <div class="cw-section-head">
+            <span class="cw-tag">Smart Advisory</span>
+            <h2>Find Your Investor Profile in 60 Seconds</h2>
+            <p>Answer 3 quick questions to discover your ideal risk-weighted mutual fund portfolio.</p>
+          </div>
+
+          <div class="cw-visual-card" style="max-width: 680px; margin: 0 auto;">
+            <form id="risk-quiz-form" onsubmit="event.preventDefault();">
+              <div style="margin-bottom: 24px;">
+                <label style="display:block; font-weight: 700; color: #001738; margin-bottom: 12px; font-size: 15px;">
+                  1. What is your primary investment goal?
+                </label>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                  <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #475467; cursor: pointer;">
+                    <input type="radio" name="quiz-goal" value="1" required checked /> Protect capital and earn steady, safe interest
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #475467; cursor: pointer;">
+                    <input type="radio" name="quiz-goal" value="2" /> Moderate balance of growth and capital preservation
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #475467; cursor: pointer;">
+                    <input type="radio" name="quiz-goal" value="3" /> Maximize long-term wealth despite market fluctuations
+                  </label>
+                </div>
+              </div>
+
+              <div style="margin-bottom: 24px;">
+                <label style="display:block; font-weight: 700; color: #001738; margin-bottom: 12px; font-size: 15px;">
+                  2. How long do you plan to invest before withdrawing?
+                </label>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                  <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #475467; cursor: pointer;">
+                    <input type="radio" name="quiz-horizon" value="1" required checked /> Less than 6 months (Short term)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #475467; cursor: pointer;">
+                    <input type="radio" name="quiz-horizon" value="2" /> 1 to 3 years (Medium term)
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #475467; cursor: pointer;">
+                    <input type="radio" name="quiz-horizon" value="3" /> More than 3 years (Long term)
+                  </label>
+                </div>
+              </div>
+
+              <div style="margin-bottom: 24px;">
+                <label style="display:block; font-weight: 700; color: #001738; margin-bottom: 12px; font-size: 15px;">
+                  3. If market prices drop 10% in a month, what would you do?
+                </label>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                  <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #475467; cursor: pointer;">
+                    <input type="radio" name="quiz-risk" value="1" required checked /> Panic and withdraw immediately
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #475467; cursor: pointer;">
+                    <input type="radio" name="quiz-risk" value="2" /> Hold and wait for the market to recover
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #475467; cursor: pointer;">
+                    <input type="radio" name="quiz-risk" value="3" /> Take advantage of the dip and invest more
+                  </label>
+                </div>
+              </div>
+
+              <button type="button" id="quiz-submit" class="cw-btn-primary" style="width: 100%;">
+                Get My Recommended Portfolio &rarr;
+              </button>
+
+              <div id="quiz-result" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIGNATURE BOTTOM CTA BANNER -->
+      <section class="cw-bottom-cta">
+        <div class="cw-wrap cw-bottom-cta-inner">
+          <h2>Your future won't wait. Start growing today.</h2>
+          <p>
+            Join over 1,000,000+ ambitious individuals and businesses building long-term wealth with Cowrywise.
+          </p>
+          <div class="cw-bottom-cta-actions">
+            <a href="signup.html" class="cw-btn-primary" style="background: #ffffff; color: #001738; padding: 14px 32px; font-weight: 700;">
+              Sign up for free
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+        <footer class="foot">
+      <div class="wrap">
+        <div class="f-top">
+          <div>
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>Trusted by millions of Nigerians like you.</p>
+            <div class="stores">
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-googleplay.svg"
+                  alt="Google Play icon"
+                  class="store-icon"
+                />
+                <span>Get it on<strong>Play Store</strong></span>
+              </a>
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-apple.svg"
+                  alt="Apple icon"
+                  class="store-icon"
+                />
+                <span>Download on<strong>App Store</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="f-cols">
+            <div>
+              <h5>Company</h5>
+              <a href="#">About Us</a>
+              <a href="#">Press</a>
+              <a href="#">Careers</a>
+              <a href="#">Ambassadors</a>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+            </div>
+            <div>
+              <h5>Product</h5>
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="sprout.html">Sprout</a>
+              <a href="embed.html">Embed API</a>
+            </div>
+            <div>
+              <h5>Resources</h5>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html">Glossary</a>
+              <a href="learn.html#faq">Help Center</a>
+              <a href="index.html#sec-calc-title">Estimate interest</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+            <div>
+              <h5>Contact</h5>
+              <a href="mailto:support@cowrywise.com">support@cowrywise.com</a>
+              <a href="tel:07000269799473">07000COWRYWISE</a>
+              <a href="https://wa.me/2349022979297" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="socials" aria-label="Social media channels">
+          <a
+            href="https://facebook.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Facebook"
+          >
+            <img src="images/icon-facebook.svg" alt="Facebook" />
+          </a>
+          <a
+            href="https://twitter.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Twitter / X"
+          >
+            <img src="images/icon-twitter.svg" alt="Twitter" />
+          </a>
+          <a
+            href="https://instagram.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Instagram"
+          >
+            <img src="images/icon-instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://wa.me/2349022979297"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on WhatsApp"
+          >
+            <img src="images/icon-whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCRApoo2RnIcX4ocFmKZwYSg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on YouTube"
+          >
+            <img src="images/icon-youtube.svg" alt="YouTube" />
+          </a>
+          <a
+            href="https://t.me/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Telegram"
+          >
+            <img src="images/icon-telegram.svg" alt="Telegram" />
+          </a>
+        </div>
+        <div class="f-mid">
+          <span
+            >&#127475;&#127468; &nbsp;5C Reverend Ogunbiyi Street, Ikeja GRA,
+            Lagos Nigeria.</span
+          >
+          <div class="lics">
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span>Cowrywise<strong>Licensed Fund Manager</strong></span>
+            </div>
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span
+                >CFTL Digital<strong>Licensed Digital Sub-broker</strong></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="legal">
+          <p>
+            Cowrywise Financial Technology Limited ("Cowrywise") is a
+            Fund/Portfolio Manager duly licensed by the Securities and Exchange
+            Commission (SEC) of Nigeria, with License #1940 and its sister
+            company, CFTL Digital Services Limited, is a Digital Sub-Broker duly
+            licensed by the SEC, with License #3005.
+          </p>
+          <p>
+            Our mutual funds are managed by our fund management partners and
+            made available to our clients through our web and mobile
+            applications. The fund manager for each mutual fund is disclosed on
+            every mutual fund's profile page. Any historical returns or expected
+            returns are hypothetical in nature and may not reflect actual future
+            performance.
+            <a href="mutual-funds.html"
+              >View full list of available mutual funds on Cowrywise.</a
+            >
+          </p>
+          <p>
+            The content on this website does not constitute a complete
+            description of Cowrywise's fund management services. By creating a
+            Cowrywise account, you accept Cowrywise's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>, and
+            by using the stocks feature on Cowrywise, you accept CFTL Digital's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </p>
+          <p>
+            Google Play and the Google Play logo are trademarks of Google LLC.
+            Apple, the Apple logo, and iPhone are trademarks of Apple Inc.
+            registered in the U.S.
+          </p>
+          <p>
+            &copy; 2026 Cowrywise Financial Technology. All rights reserved. RC
+            1419869. <a href="#">NDPC Audited and Compliant</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+  </body>
+</html>

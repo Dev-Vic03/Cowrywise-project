@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Online in Nigeria | Enjoy Best Returns | Cowrywise</title>
+    <meta
+      name="description"
+      content="Save for short-term and long-term goals with Cowrywise. 100% safety guaranteed. We keep you disciplined. Start saving now."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="wrap nav-in">
+        <a href="index.html" class="logo" aria-label="Cowrywise Homepage">
+          <img
+            src="images/logo.svg"
+            alt="Cowrywise"
+            class="logo-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+          />
+          <span class="logo-fallback" style="display: none;">
+            <span class="logo-mark"></span>cowrywise
+          </span>
+        </a>
+        <nav class="menu-bar" aria-label="Main navigation">
+          <div class="has-menu">
+            <a href="save.html" class="nav-link active">Personal <i class="chev"></i></a>
+            <div class="drop">
+              <a href="save.html"
+                ><b>Savings</b><span>Save and earn amazing returns</span></a
+              >
+              <a href="mutual-funds.html"
+                ><b>Mutual Funds</b><span>Grow your wealth without chasing charts</span></a
+              >
+              <a href="stocks.html"
+                ><b>Stocks</b><span>Own a slice of Nigeria's top companies</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="index.html#sec-calc-title" class="drop-sub"
+                ><b>Estimate your returns &nearr;</b><span>Calculate potential gains</span></a
+              >
+              <a href="mutual-funds.html#risk-assessment" class="drop-sub"
+                ><b>Risk assessment &nearr;</b><span>Find your investor profile</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="sprout.html" class="nav-link">Business <i class="chev"></i></a>
+            <div class="drop">
+              <a href="sprout.html"
+                ><b>Sprout</b><span>Put your business idle cash to work</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="embed.html" class="nav-link">Developer <i class="chev"></i></a>
+            <div class="drop">
+              <a href="embed.html"
+                ><b>Embed</b><span>Offer investment services in your app</span></a
+              >
+              <a href="developers.html"
+                ><b>Docs</b><span>Read how to integrate the Embed API</span></a
+              >
+              <div class="drop-divider"></div>
+              <a href="https://embedbycowrywise.slack.com/" target="_blank" rel="noopener noreferrer" class="drop-sub"
+                ><b>Slack Community &nearr;</b><span>Join developers building on Cowrywise</span></a
+              >
+            </div>
+          </div>
+          <div class="has-menu">
+            <a href="learn.html" class="nav-link">Learn <i class="chev"></i></a>
+            <div class="drop">
+              <a href="learn.html"
+                ><b>Glossary</b><span>Learn from a curation of simple money terms</span></a
+              >
+              <a href="blog.html"
+                ><b>Blog</b><span>Announcements, articles and stories</span></a
+              >
+              <a href="learn.html#faq"
+                ><b>Help Center</b><span>Everything you need to use Cowrywise</span></a
+              >
+            </div>
+          </div>
+        </nav>
+        <div class="nav-cta" id="nav-cta">
+          <a href="login.html" class="login">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Cowrywise" class="logo-img" />
+          </a>
+          <button
+            class="mobile-nav-close"
+            id="mobile-nav-close"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="mobile-nav-body">
+          <div class="m-group active">
+            <button class="m-trigger" type="button">
+              <span>Personal</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual Funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="mutual-funds.html#risk-assessment">Risk Assessment</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Business</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="sprout.html">Sprout (Corporate Treasury)</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Developer</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="embed.html">Embed API</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+          </div>
+          <div class="m-group">
+            <button class="m-trigger" type="button">
+              <span>Learn</span><i class="m-chev"></i>
+            </button>
+            <div class="m-content">
+              <a href="learn.html">Glossary</a>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html#faq">Help Center</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav-footer" id="mobile-nav-cta">
+          <a href="login.html" class="btn btn-outline">Log in</a>
+          <a href="signup.html" class="btn">Sign up for free</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO SECTION -->
+      <section class="cw-hero">
+        <div class="cw-wrap cw-hero-inner">
+          <div class="cw-pill-badge">
+            <span class="cw-pill-dot"></span>
+            <span>Automated Savings & Wealth Discipline</span>
+          </div>
+          <h1 class="cw-hero-title">Get on the right side of saving</h1>
+          <p class="cw-hero-subtitle">
+            Saving can be much more than storing money. Automate your savings and earn
+            awesome returns up to 14.5% per annum. No penalties. No fees. Absolutely free.
+          </p>
+          <div class="cw-hero-actions">
+            <a href="signup.html" class="cw-btn-primary">Start saving now</a>
+            <a href="#savings-calc" class="cw-btn-secondary">Calculate returns &darr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURE ROW 1: SAVE MONEY ON YOUR OWN TERMS -->
+      <section class="cw-section">
+        <div class="cw-wrap">
+          <div class="cw-feature-row">
+            <div class="cw-feature-info">
+              <span class="cw-tag">Plans Tailored To You</span>
+              <h3>Save money on your own terms</h3>
+              <p>
+                With just one account, you can save in multiple different ways.
+                Whether you need automated daily micro-savings or long-term joint targets,
+                Cowrywise provides the discipline and rewards your consistency.
+              </p>
+              <ul class="cw-feature-bullets">
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Regular Savings:</strong> Save on your terms for a minimum of 3 months. We'll reward your discipline with juicy returns.</span>
+                </li>
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Money Duo:</strong> Long-term savings for couples. No lockups, with accounting and complete transparency of funds.</span>
+                </li>
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Halal Savings:</strong> Save money with or without automation, free of riba, absolutely interest-free according to Islamic law.</span>
+                </li>
+              </ul>
+              <div>
+                <a href="signup.html" class="cw-btn-primary">Create a plan &rarr;</a>
+              </div>
+            </div>
+
+            <!-- VISUAL CARD -->
+            <div class="cw-visual-card">
+              <div class="cw-stat-badge">
+                Annual Yield: <strong>14.5%</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+                <span style="font-size: 14px; font-weight: 600; color: #001738;">Emergency Fund Plan</span>
+                <span style="font-size: 13px; font-weight: 700; color: #0066f5;">₦450,000 / ₦600,000</span>
+              </div>
+              <div class="cw-mini-meter">
+                <div class="cw-mini-meter-fill" style="width: 75%;"></div>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 12px; color: #667085; margin-top: 4px;">
+                <span>75% Achieved</span>
+                <span>Matures in 3 months</span>
+              </div>
+
+              <div style="border-top: 1px solid #eaecf0; margin-top: 24px; padding-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div style="background: #f8fafd; padding: 14px; border-radius: 10px;">
+                  <span style="font-size: 11px; color: #667085; text-transform: uppercase; font-weight: 600;">Daily Interest</span>
+                  <div style="font-size: 16px; font-weight: 700; color: #12b76a; margin-top: 2px;">+₦178.75</div>
+                </div>
+                <div style="background: #f8fafd; padding: 14px; border-radius: 10px;">
+                  <span style="font-size: 11px; color: #667085; text-transform: uppercase; font-weight: 600;">Discipline Lock</span>
+                  <div style="font-size: 16px; font-weight: 700; color: #001738; margin-top: 2px;">Active &bull; SEC Regulated</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURE ROW 2: CALCULATOR & BETTER INTEREST RATES -->
+      <section class="cw-section bg-alt" id="savings-calc">
+        <div class="cw-wrap">
+          <div class="cw-section-head">
+            <span class="cw-tag">Compound Returns</span>
+            <h2>Better interest rates than your bank</h2>
+            <p>Our interest rates will get your bank account jealous. See how your savings compound over time.</p>
+          </div>
+
+          <div class="cw-calc-wrapper">
+            <div class="cw-calc-grid">
+              <div class="cw-calc-inputs">
+                <div>
+                  <div class="cw-calc-label-row">
+                    <span>Frequency</span>
+                  </div>
+                  <div class="cw-seg-tabs">
+                    <button type="button" class="cw-seg-tab save-frequency-tab active" data-freq="monthly">Monthly</button>
+                    <button type="button" class="cw-seg-tab save-frequency-tab" data-freq="weekly">Weekly</button>
+                    <button type="button" class="cw-seg-tab save-frequency-tab" data-freq="onetime">One-time</button>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="cw-calc-label-row">
+                    <span>Deposit Amount</span>
+                    <span class="cw-calc-amount-val" id="save-amount-display">₦50,000</span>
+                  </div>
+                  <input
+                    type="range"
+                    id="save-slider"
+                    class="cw-range-slider"
+                    min="5000"
+                    max="500000"
+                    step="5000"
+                    value="50000"
+                  />
+                  <div style="display: flex; justify-content: space-between; font-size: 11px; color: #98a2b3; margin-top: 6px;">
+                    <span>₦5,000</span>
+                    <span>₦250,000</span>
+                    <span>₦500,000</span>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="cw-calc-label-row">
+                    <span>Duration</span>
+                  </div>
+                  <div class="cw-seg-tabs">
+                    <button type="button" class="cw-seg-tab save-duration-tab" data-months="3">3 Months</button>
+                    <button type="button" class="cw-seg-tab save-duration-tab" data-months="6">6 Months</button>
+                    <button type="button" class="cw-seg-tab save-duration-tab active" data-months="12">1 Year</button>
+                    <button type="button" class="cw-seg-tab save-duration-tab" data-months="24">2 Years</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PREVIEW BOX -->
+              <div class="cw-calc-preview">
+                <div class="cw-calc-tag">Estimated Maturity Balance</div>
+                <div class="cw-calc-total-number" id="save-result-display">₦693,250</div>
+                <p style="font-size: 13px; color: #667085; margin: 0;">
+                  Calculated at competitive annual returns of ~14.5% p.a.
+                </p>
+
+                <div class="cw-calc-stats-row">
+                  <div class="cw-calc-stat-item">
+                    <span>Total Saved</span>
+                    <strong id="save-principal-display">₦600,000</strong>
+                  </div>
+                  <div class="cw-calc-stat-item">
+                    <span>Interest Earned</span>
+                    <strong id="save-interest-display" style="color: #12b76a;">+₦93,250</strong>
+                  </div>
+                </div>
+
+                <div style="margin-top: 24px;">
+                  <a href="signup.html" class="cw-btn-primary" style="width: 100%;">Start this savings plan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- COMPARISON TABLE -->
+          <div style="margin-top: 56px;">
+            <div class="cw-compare-card">
+              <table class="cw-table-clean">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th class="cw-highlight-col">Cowrywise</th>
+                    <th>Traditional Commercial Banks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Annual Interest Rate</strong></td>
+                    <td class="cw-highlight-col" style="color: #12b76a; font-weight: 700;">Up to 14.5% per annum</td>
+                    <td>2.5% – 4.0% per annum</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Account Maintenance Fee</strong></td>
+                    <td class="cw-highlight-col" style="color: #12b76a; font-weight: 700;">₦0.00 (Zero charges)</td>
+                    <td>Monthly card fees, SMS alert charges, ledger fees</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Automated Debit Schedules</strong></td>
+                    <td class="cw-highlight-col">Daily, Weekly, Monthly periodic savings</td>
+                    <td>Manual standing orders requiring branch setup</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Discipline & Lockups</strong></td>
+                    <td class="cw-highlight-col">Custom lock dates to prevent impulse withdrawals</td>
+                    <td>Instant debit card temptations whenever you swipe</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Regulatory Oversight</strong></td>
+                    <td class="cw-highlight-col">Duly licensed Fund Manager by the SEC</td>
+                    <td>Regulated by CBN</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURE ROW 3: CIRCLES -->
+      <section class="cw-section">
+        <div class="cw-wrap">
+          <div class="cw-feature-row reverse">
+            <div class="cw-feature-info">
+              <span class="cw-tag">Community & Peer Savings</span>
+              <h3>What's better than one billionaire? A Circle</h3>
+              <p>
+                Hit financial goals quicker and stronger by saving with friends with the help of some friendly competition.
+                Save towards weddings, vacations, group investments, or alumni projects together.
+              </p>
+              <ul class="cw-feature-bullets">
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Target Circles:</strong> Save together towards a common financial goal with individual progress bars.</span>
+                </li>
+                <li>
+                  <span class="cw-bullet-check">
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <span><strong>Challenge Circles:</strong> Join public saving challenges with community leaderboards and bragging rights.</span>
+                </li>
+              </ul>
+              <div>
+                <a href="signup.html" class="cw-btn-primary">Join a Circle now &rarr;</a>
+              </div>
+            </div>
+
+            <!-- VISUAL CARD -->
+            <div class="cw-visual-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                <span style="font-size: 16px; font-weight: 700; color: #001738;">Techies Travel Circle 2026</span>
+                <span class="cw-stat-badge" style="margin-bottom: 0;">24 Members</span>
+              </div>
+              <p style="font-size: 13px; color: #667085; margin-bottom: 16px;">
+                Goal: ₦12,000,000 &bull; Trip to Zanzibar
+              </p>
+              <div class="cw-mini-meter" style="height: 10px;">
+                <div class="cw-mini-meter-fill" style="width: 82%; background: #12b76a;"></div>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 12px; color: #667085; margin-top: 6px;">
+                <span>₦9,840,000 saved</span>
+                <span style="color: #12b76a; font-weight: 600;">82% Complete</span>
+              </div>
+
+              <div style="border-top: 1px solid #eaecf0; margin-top: 20px; padding-top: 16px;">
+                <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; color: #667085; margin-bottom: 10px;">
+                  Top Savers Leaderboard
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 13px; padding: 6px 0; border-bottom: 1px dashed #eaecf0;">
+                  <span style="font-weight: 600; color: #001738;">1. Tunde O.</span>
+                  <span style="font-weight: 700; color: #0066f5;">₦520,000</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 13px; padding: 6px 0;">
+                  <span style="font-weight: 600; color: #001738;">2. Esther A.</span>
+                  <span style="font-weight: 700; color: #0066f5;">₦490,000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIAL SECTION -->
+      <section class="cw-section bg-alt">
+        <div class="cw-wrap">
+          <div class="cw-testimonial-box">
+            <div class="cw-testimonial-avatar-wrap">
+              <img
+                src="images/customer-funmilola.jpg"
+                alt="Wuraola Kayode"
+                class="cw-testimonial-avatar"
+              />
+            </div>
+            <div class="cw-testimonial-content">
+              <blockquote>
+                &ldquo;I probably didn't fully understand the power of small steps leading to big strides till I started saving with Cowrywise.
+                The first laptop I bought, myself, was funded by the savings I built one step at a time with Cowrywise, the discipline made things easier.&rdquo;
+              </blockquote>
+              <div class="cw-testimonial-author">Wuraola Kayode</div>
+              <div class="cw-testimonial-role">Little saving steps &bull; Verified Cowrywise Saver</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIGNATURE BOTTOM CTA BANNER -->
+      <section class="cw-bottom-cta">
+        <div class="cw-wrap cw-bottom-cta-inner">
+          <h2>Your future won't wait. Start growing today.</h2>
+          <p>
+            Join over 1,000,000+ ambitious individuals and businesses building long-term wealth with Cowrywise.
+          </p>
+          <div class="cw-bottom-cta-actions">
+            <a href="signup.html" class="cw-btn-primary" style="background: #ffffff; color: #001738; padding: 14px 32px; font-weight: 700;">
+              Sign up for free
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+        <footer class="foot">
+      <div class="wrap">
+        <div class="f-top">
+          <div>
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>Trusted by millions of Nigerians like you.</p>
+            <div class="stores">
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-googleplay.svg"
+                  alt="Google Play icon"
+                  class="store-icon"
+                />
+                <span>Get it on<strong>Play Store</strong></span>
+              </a>
+              <a
+                href="https://cwry.se/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="store"
+              >
+                <img
+                  src="images/icon-apple.svg"
+                  alt="Apple icon"
+                  class="store-icon"
+                />
+                <span>Download on<strong>App Store</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="f-cols">
+            <div>
+              <h5>Company</h5>
+              <a href="#">About Us</a>
+              <a href="#">Press</a>
+              <a href="#">Careers</a>
+              <a href="#">Ambassadors</a>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+            </div>
+            <div>
+              <h5>Product</h5>
+              <a href="save.html">Savings</a>
+              <a href="mutual-funds.html">Mutual funds</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="sprout.html">Sprout</a>
+              <a href="embed.html">Embed API</a>
+            </div>
+            <div>
+              <h5>Resources</h5>
+              <a href="blog.html">Blog</a>
+              <a href="learn.html">Glossary</a>
+              <a href="learn.html#faq">Help Center</a>
+              <a href="index.html#sec-calc-title">Estimate interest</a>
+              <a href="developers.html">Developer Docs</a>
+            </div>
+            <div>
+              <h5>Contact</h5>
+              <a href="mailto:support@cowrywise.com">support@cowrywise.com</a>
+              <a href="tel:07000269799473">07000COWRYWISE</a>
+              <a href="https://wa.me/2349022979297" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="socials" aria-label="Social media channels">
+          <a
+            href="https://facebook.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Facebook"
+          >
+            <img src="images/icon-facebook.svg" alt="Facebook" />
+          </a>
+          <a
+            href="https://twitter.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Twitter / X"
+          >
+            <img src="images/icon-twitter.svg" alt="Twitter" />
+          </a>
+          <a
+            href="https://instagram.com/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Instagram"
+          >
+            <img src="images/icon-instagram.svg" alt="Instagram" />
+          </a>
+          <a
+            href="https://wa.me/2349022979297"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on WhatsApp"
+          >
+            <img src="images/icon-whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCRApoo2RnIcX4ocFmKZwYSg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on YouTube"
+          >
+            <img src="images/icon-youtube.svg" alt="YouTube" />
+          </a>
+          <a
+            href="https://t.me/cowrywise"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cowrywise on Telegram"
+          >
+            <img src="images/icon-telegram.svg" alt="Telegram" />
+          </a>
+        </div>
+        <div class="f-mid">
+          <span
+            >&#127475;&#127468; &nbsp;5C Reverend Ogunbiyi Street, Ikeja GRA,
+            Lagos Nigeria.</span
+          >
+          <div class="lics">
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span>Cowrywise<strong>Licensed Fund Manager</strong></span>
+            </div>
+            <div class="lic">
+              <i class="lic-badge"
+                ><img src="images/imgi_12_sec.png" alt="SEC License"
+              /></i>
+              <span
+                >CFTL Digital<strong>Licensed Digital Sub-broker</strong></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="legal">
+          <p>
+            Cowrywise Financial Technology Limited ("Cowrywise") is a
+            Fund/Portfolio Manager duly licensed by the Securities and Exchange
+            Commission (SEC) of Nigeria, with License #1940 and its sister
+            company, CFTL Digital Services Limited, is a Digital Sub-Broker duly
+            licensed by the SEC, with License #3005.
+          </p>
+          <p>
+            Our mutual funds are managed by our fund management partners and
+            made available to our clients through our web and mobile
+            applications. The fund manager for each mutual fund is disclosed on
+            every mutual fund's profile page. Any historical returns or expected
+            returns are hypothetical in nature and may not reflect actual future
+            performance.
+            <a href="mutual-funds.html"
+              >View full list of available mutual funds on Cowrywise.</a
+            >
+          </p>
+          <p>
+            The content on this website does not constitute a complete
+            description of Cowrywise's fund management services. By creating a
+            Cowrywise account, you accept Cowrywise's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>, and
+            by using the stocks feature on Cowrywise, you accept CFTL Digital's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </p>
+          <p>
+            Google Play and the Google Play logo are trademarks of Google LLC.
+            Apple, the Apple logo, and iPhone are trademarks of Apple Inc.
+            registered in the U.S.
+          </p>
+          <p>
+            &copy; 2026 Cowrywise Financial Technology. All rights reserved. RC
+            1419869. <a href="#">NDPC Audited and Compliant</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+  </body>
+</html>
